@@ -44,6 +44,8 @@
 		DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */; };
 		DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */; };
 		DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F420F93EB200E753E4 /* MenuViewController.swift */; };
+		DEE560F720F9468800E753E4 /* ProfessionalHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */; };
+		DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaitentHomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaitentHomeCellTableViewCell.xib; sourceTree = "<group>"; };
 		DEE560F420F93EB200E753E4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHomeScreen.swift; sourceTree = "<group>"; };
+		DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalMenuViewController.swift; sourceTree = "<group>"; };
 		E2381B65E543EACA7CD5262E /* Pods-P3HR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HR/Pods-P3HR.debug.xcconfig"; sourceTree = "<group>"; };
 		F7A9D308806A6DBBFCF858DF /* Pods-P3HRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -289,6 +293,8 @@
 		DE62F8E720ED5C5A001D7BA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */,
+				DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -685,6 +691,7 @@
 				DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */,
 				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
 				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
+				DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */,
 				DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */,
 				DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */,
 				DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */,
@@ -693,6 +700,7 @@
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
 				DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */,
+				DEE560F720F9468800E753E4 /* ProfessionalHomeScreen.swift in Sources */,
 				DE62F8D220ED5923001D7BA2 /* AlertManager.swift in Sources */,
 				DE62F8C320ED5866001D7BA2 /* P3HRLabel.swift in Sources */,
 			);

@@ -12,6 +12,7 @@ extension UIStoryboard {
     enum StoryboardIdentifiers : String {
         case registeration = "RegistrationVC"
         case menu = "menuVC"
+        case professionalMenu = "professionalMenuVC"
         
         case dashboardTabVC = "dashboardTabBar"
         case dashboard = "dash"

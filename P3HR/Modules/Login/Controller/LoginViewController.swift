@@ -22,7 +22,7 @@ class LoginViewController: ParentViewController {
         super.viewDidLoad()
 
         loginButton.touchUpInside() {
-            self.presetStroryboard(storyboard: UIStoryboard.patientStoryboard())
+            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
         }
         
         forgotPaswordButton.touchUpInside() {
