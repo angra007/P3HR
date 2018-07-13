@@ -1,0 +1,6 @@
+framework module Pods_P3HR {
+  umbrella header "Pods-P3HR-umbrella.h"
+
+  export *
+  module * { export * }
+}

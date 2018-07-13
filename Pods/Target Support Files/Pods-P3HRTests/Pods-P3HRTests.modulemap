@@ -1,0 +1,6 @@
+framework module Pods_P3HRTests {
+  umbrella header "Pods-P3HRTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

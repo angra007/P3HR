@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZ7-A8-Sbb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patient Home View Controller-->
+        <scene sceneID="bQa-4u-PKd">
+            <objects>
+                <viewController id="MLU-Z2-lf2" customClass="PatientHomeViewController" customModule="P3HR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ci-p1-8mj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-Ui-HkG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uTJ-Ui-HkG" firstAttribute="top" secondItem="hri-Xu-JAx" secondAttribute="top" id="FUB-jm-kgx"/>
+                            <constraint firstItem="uTJ-Ui-HkG" firstAttribute="leading" secondItem="hri-Xu-JAx" secondAttribute="leading" id="dnF-9k-pnS"/>
+                            <constraint firstAttribute="trailing" secondItem="uTJ-Ui-HkG" secondAttribute="trailing" id="xDw-YS-diA"/>
+                            <constraint firstItem="hri-Xu-JAx" firstAttribute="bottom" secondItem="uTJ-Ui-HkG" secondAttribute="bottom" id="zCg-sV-Lvy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hri-Xu-JAx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1EF-Wn-yCm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="eOX-f5-nOh">
+                            <connections>
+                                <action selector="didTapMenuButton:" destination="MLU-Z2-lf2" id="Jpn-WL-vMd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="uTJ-Ui-HkG" id="pCA-a4-3N1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irx-lu-5RN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="17.541229385307346"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="JfH-Ia-M8s">
+            <objects>
+                <viewController storyboardIdentifier="menuVC" id="wHF-0f-WBS" customClass="MenuViewController" customModule="P3HR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Rd-TM-Hcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q1C-Yl-7cW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="noT-o7-NnA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6X-dY-UZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B4r-58-suj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZ7-A8-Sbb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ul7-4K-S6N">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MLU-Z2-lf2" kind="relationship" relationship="rootViewController" id="50J-cf-lqN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sV-tO-42i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495.19999999999999" y="17.541229385307346"/>
+        </scene>
+    </scenes>
+</document>

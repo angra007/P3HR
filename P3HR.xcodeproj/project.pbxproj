@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E24F90640AC14FB4E3C5958 /* Pods_P3HRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241BA549CC45C3829721BBCE /* Pods_P3HRUITests.framework */; };
+		88843DA0DF6873AD8373FBBB /* Pods_P3HR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A48DE3A87559891F708C52B /* Pods_P3HR.framework */; };
+		ABB4A76CB426D964D6842F3F /* Pods_P3HRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */; };
+		DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BA20ED5826001D7BA2 /* Image.swift */; };
+		DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BB20ED5826001D7BA2 /* StoryboardHelper.swift */; };
+		DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BC20ED5826001D7BA2 /* StringHelper.swift */; };
+		DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BD20ED5826001D7BA2 /* Constants.swift */; };
+		DE62F8C320ED5866001D7BA2 /* P3HRLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8C220ED5866001D7BA2 /* P3HRLabel.swift */; };
+		DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8C420ED5880001D7BA2 /* P3HRTextField.swift */; };
+		DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8C620ED5890001D7BA2 /* P3HRTextView.swift */; };
+		DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8C820ED58B7001D7BA2 /* P3HRButton.swift */; };
+		DE62F8D220ED5923001D7BA2 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8CE20ED5923001D7BA2 /* AlertManager.swift */; };
+		DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8CF20ED5923001D7BA2 /* ActivityIndicatorManager.swift */; };
+		DE62F8D820ED5A4D001D7BA2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8D420ED5A4C001D7BA2 /* UIView.swift */; };
+		DE62F8DA20ED5A4D001D7BA2 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8D620ED5A4C001D7BA2 /* TableViewHelper.swift */; };
+		DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8D720ED5A4D001D7BA2 /* Style.swift */; };
+		DE62F8DD20ED5BBA001D7BA2 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8DC20ED5BBA001D7BA2 /* ParentViewController.swift */; };
+		DE62F8F320ED5CBE001D7BA2 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */; };
+		DE62F8F520ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */; };
+		DE62F8F720ED5CDD001D7BA2 /* PatientStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */; };
+		DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECF313220F2B5F300BD2683 /* LoginViewController.swift */; };
 		DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE95120ED5674006D24A9 /* AppDelegate.swift */; };
 		DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE95320ED5674006D24A9 /* ViewController.swift */; };
 		DECFE95720ED5674006D24A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECFE95520ED5674006D24A9 /* Main.storyboard */; };
@@ -15,6 +36,14 @@
 		DECFE95F20ED5676006D24A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECFE95D20ED5676006D24A9 /* LaunchScreen.storyboard */; };
 		DECFE96A20ED5676006D24A9 /* P3HRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE96920ED5676006D24A9 /* P3HRTests.swift */; };
 		DECFE97520ED5676006D24A9 /* P3HRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE97420ED5676006D24A9 /* P3HRUITests.swift */; };
+		DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED276E520F2D46200A870FC /* RegistrationViewController.swift */; };
+		DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED276E720F2D56C00A870FC /* P3HRUtilities.swift */; };
+		DEE560E820F91DC600E753E4 /* EnglishLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEE560EA20F91DC600E753E4 /* EnglishLocalizable.strings */; };
+		DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */; };
+		DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */; };
+		DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */; };
+		DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */; };
+		DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F420F93EB200E753E4 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +64,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018D9C274AD4211E0FBFD366 /* Pods-P3HRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRTests/Pods-P3HRTests.release.xcconfig"; sourceTree = "<group>"; };
+		241BA549CC45C3829721BBCE /* Pods_P3HRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P3HRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF16D2425B6D7EF1A7B350E /* Pods-P3HR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HR.release.xcconfig"; path = "Pods/Target Support Files/Pods-P3HR/Pods-P3HR.release.xcconfig"; sourceTree = "<group>"; };
+		8A48DE3A87559891F708C52B /* Pods_P3HR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P3HR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P3HRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCDC15411E9DD7B9B1136E8 /* Pods-P3HRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRTests/Pods-P3HRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8791EF9BD56C738D7431386 /* Pods-P3HRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE62F8BA20ED5826001D7BA2 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DE62F8BB20ED5826001D7BA2 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		DE62F8BC20ED5826001D7BA2 /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		DE62F8BD20ED5826001D7BA2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE62F8C220ED5866001D7BA2 /* P3HRLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRLabel.swift; sourceTree = "<group>"; };
+		DE62F8C420ED5880001D7BA2 /* P3HRTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRTextField.swift; sourceTree = "<group>"; };
+		DE62F8C620ED5890001D7BA2 /* P3HRTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRTextView.swift; sourceTree = "<group>"; };
+		DE62F8C820ED58B7001D7BA2 /* P3HRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRButton.swift; sourceTree = "<group>"; };
+		DE62F8CE20ED5923001D7BA2 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		DE62F8CF20ED5923001D7BA2 /* ActivityIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManager.swift; sourceTree = "<group>"; };
+		DE62F8D420ED5A4C001D7BA2 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DE62F8D620ED5A4C001D7BA2 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		DE62F8D720ED5A4D001D7BA2 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		DE62F8DC20ED5BBA001D7BA2 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfessionalStoryboard.storyboard; sourceTree = "<group>"; };
+		DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientStoryboard.storyboard; sourceTree = "<group>"; };
+		DECF313220F2B5F300BD2683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DECFE94E20ED5674006D24A9 /* P3HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P3HR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECFE95120ED5674006D24A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECFE95320ED5674006D24A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +103,16 @@
 		DECFE97020ED5676006D24A9 /* P3HRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P3HRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECFE97420ED5676006D24A9 /* P3HRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRUITests.swift; sourceTree = "<group>"; };
 		DECFE97620ED5676006D24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED276E520F2D46200A870FC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		DED276E720F2D56C00A870FC /* P3HRUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRUtilities.swift; sourceTree = "<group>"; };
+		DEE560E920F91DC600E753E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EnglishLocalizable.strings; sourceTree = "<group>"; };
+		DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
+		DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaitentHomeCellTableViewCell.swift; sourceTree = "<group>"; };
+		DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaitentHomeCellTableViewCell.xib; sourceTree = "<group>"; };
+		DEE560F420F93EB200E753E4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E2381B65E543EACA7CD5262E /* Pods-P3HR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HR/Pods-P3HR.debug.xcconfig"; sourceTree = "<group>"; };
+		F7A9D308806A6DBBFCF858DF /* Pods-P3HRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88843DA0DF6873AD8373FBBB /* Pods_P3HR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB4A76CB426D964D6842F3F /* Pods_P3HRTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +136,240 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E24F90640AC14FB4E3C5958 /* Pods_P3HRUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F29E54B1E4A514060F2F94D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A48DE3A87559891F708C52B /* Pods_P3HR.framework */,
+				957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */,
+				241BA549CC45C3829721BBCE /* Pods_P3HRUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD69AD2DAE133625F01267A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2381B65E543EACA7CD5262E /* Pods-P3HR.debug.xcconfig */,
+				5CF16D2425B6D7EF1A7B350E /* Pods-P3HR.release.xcconfig */,
+				9FCDC15411E9DD7B9B1136E8 /* Pods-P3HRTests.debug.xcconfig */,
+				018D9C274AD4211E0FBFD366 /* Pods-P3HRTests.release.xcconfig */,
+				F7A9D308806A6DBBFCF858DF /* Pods-P3HRUITests.debug.xcconfig */,
+				C8791EF9BD56C738D7431386 /* Pods-P3HRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE62F8B920ED577A001D7BA2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8CB20ED58D9001D7BA2 /* General */,
+				DE62F8CA20ED58C0001D7BA2 /* P3HRSpecific */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DE62F8CA20ED58C0001D7BA2 /* P3HRSpecific */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8C220ED5866001D7BA2 /* P3HRLabel.swift */,
+				DE62F8C420ED5880001D7BA2 /* P3HRTextField.swift */,
+				DE62F8C620ED5890001D7BA2 /* P3HRTextView.swift */,
+				DE62F8C820ED58B7001D7BA2 /* P3HRButton.swift */,
+				DED276E720F2D56C00A870FC /* P3HRUtilities.swift */,
+			);
+			path = P3HRSpecific;
+			sourceTree = "<group>";
+		};
+		DE62F8CB20ED58D9001D7BA2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8D720ED5A4D001D7BA2 /* Style.swift */,
+				DE62F8D620ED5A4C001D7BA2 /* TableViewHelper.swift */,
+				DE62F8D420ED5A4C001D7BA2 /* UIView.swift */,
+				DE62F8CF20ED5923001D7BA2 /* ActivityIndicatorManager.swift */,
+				DE62F8CE20ED5923001D7BA2 /* AlertManager.swift */,
+				DE62F8BD20ED5826001D7BA2 /* Constants.swift */,
+				DE62F8BA20ED5826001D7BA2 /* Image.swift */,
+				DE62F8BB20ED5826001D7BA2 /* StoryboardHelper.swift */,
+				DE62F8BC20ED5826001D7BA2 /* StringHelper.swift */,
+				DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		DE62F8DE20ED5BEB001D7BA2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8E120ED5C01001D7BA2 /* Patient */,
+				DE62F8E020ED5BF9001D7BA2 /* Professional */,
+				DE62F8DF20ED5BF1001D7BA2 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE62F8DF20ED5BF1001D7BA2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8E520ED5C4B001D7BA2 /* Controller */,
+				DE62F8E420ED5C34001D7BA2 /* Presenter */,
+				DE62F8E320ED5C2F001D7BA2 /* Model */,
+				DE62F8E220ED5C24001D7BA2 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DE62F8E020ED5BF9001D7BA2 /* Professional */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8EA20ED5C71001D7BA2 /* View */,
+				DE62F8E920ED5C6B001D7BA2 /* Model */,
+				DE62F8E820ED5C60001D7BA2 /* Presenter */,
+				DE62F8E720ED5C5A001D7BA2 /* Controller */,
+			);
+			path = Professional;
+			sourceTree = "<group>";
+		};
+		DE62F8E120ED5C01001D7BA2 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8EF20ED5C8E001D7BA2 /* View */,
+				DE62F8EE20ED5C8A001D7BA2 /* Model */,
+				DE62F8ED20ED5C84001D7BA2 /* Presentor */,
+				DE62F8EC20ED5C7E001D7BA2 /* Controller */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		DE62F8E220ED5C24001D7BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8E620ED5C51001D7BA2 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE62F8E320ED5C2F001D7BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE62F8E420ED5C34001D7BA2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE62F8E520ED5C4B001D7BA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DECF313220F2B5F300BD2683 /* LoginViewController.swift */,
+				DED276E520F2D46200A870FC /* RegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE62F8E620ED5C51001D7BA2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE62F8E720ED5C5A001D7BA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE62F8E820ED5C60001D7BA2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE62F8E920ED5C6B001D7BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE62F8EA20ED5C71001D7BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8EB20ED5C75001D7BA2 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE62F8EB20ED5C75001D7BA2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE62F8EC20ED5C7E001D7BA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */,
+				DEE560F420F93EB200E753E4 /* MenuViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE62F8ED20ED5C84001D7BA2 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		DE62F8EE20ED5C8A001D7BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE62F8EF20ED5C8E001D7BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEE560EF20F9344400E753E4 /* Cell */,
+				DE62F8F020ED5C95001D7BA2 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE62F8F020ED5C95001D7BA2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE62F8F120ED5CA7001D7BA2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		DECFE94520ED5674006D24A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +377,8 @@
 				DECFE96820ED5676006D24A9 /* P3HRTests */,
 				DECFE97320ED5676006D24A9 /* P3HRUITests */,
 				DECFE94F20ED5674006D24A9 /* Products */,
+				BD69AD2DAE133625F01267A5 /* Pods */,
+				5F29E54B1E4A514060F2F94D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +395,10 @@
 		DECFE95020ED5674006D24A9 /* P3HR */ = {
 			isa = PBXGroup;
 			children = (
-				DECFE95120ED5674006D24A9 /* AppDelegate.swift */,
-				DECFE95320ED5674006D24A9 /* ViewController.swift */,
-				DECFE95520ED5674006D24A9 /* Main.storyboard */,
-				DECFE95B20ED5676006D24A9 /* Assets.xcassets */,
-				DECFE95D20ED5676006D24A9 /* LaunchScreen.storyboard */,
-				DECFE96020ED5676006D24A9 /* Info.plist */,
-				DECFE95820ED5674006D24A9 /* P3HR.xcdatamodeld */,
+				DE62F8F120ED5CA7001D7BA2 /* Network */,
+				DE62F8DE20ED5BEB001D7BA2 /* Modules */,
+				DE62F8B920ED577A001D7BA2 /* Utilities */,
+				DECFE98220ED568A006D24A9 /* SupportingFiles */,
 			);
 			path = P3HR;
 			sourceTree = "<group>";
@@ -128,6 +421,31 @@
 			path = P3HRUITests;
 			sourceTree = "<group>";
 		};
+		DECFE98220ED568A006D24A9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DECFE95120ED5674006D24A9 /* AppDelegate.swift */,
+				DECFE95320ED5674006D24A9 /* ViewController.swift */,
+				DECFE95520ED5674006D24A9 /* Main.storyboard */,
+				DECFE95B20ED5676006D24A9 /* Assets.xcassets */,
+				DECFE95D20ED5676006D24A9 /* LaunchScreen.storyboard */,
+				DECFE96020ED5676006D24A9 /* Info.plist */,
+				DECFE95820ED5674006D24A9 /* P3HR.xcdatamodeld */,
+				DE62F8DC20ED5BBA001D7BA2 /* ParentViewController.swift */,
+				DEE560EA20F91DC600E753E4 /* EnglishLocalizable.strings */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DEE560EF20F9344400E753E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */,
+				DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DECFE97920ED5676006D24A9 /* Build configuration list for PBXNativeTarget "P3HR" */;
 			buildPhases = (
+				0FAF09DC91DECEC981886549 /* [CP] Check Pods Manifest.lock */,
 				DECFE94A20ED5674006D24A9 /* Sources */,
 				DECFE94B20ED5674006D24A9 /* Frameworks */,
 				DECFE94C20ED5674006D24A9 /* Resources */,
+				AB4ACD58438246485802F5BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +472,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DECFE97C20ED5676006D24A9 /* Build configuration list for PBXNativeTarget "P3HRTests" */;
 			buildPhases = (
+				F0E0FD6601B65101152A69E2 /* [CP] Check Pods Manifest.lock */,
 				DECFE96120ED5676006D24A9 /* Sources */,
 				DECFE96220ED5676006D24A9 /* Frameworks */,
 				DECFE96320ED5676006D24A9 /* Resources */,
@@ -170,6 +491,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DECFE97F20ED5676006D24A9 /* Build configuration list for PBXNativeTarget "P3HRUITests" */;
 			buildPhases = (
+				29582B381BF4379201A17A6E /* [CP] Check Pods Manifest.lock */,
 				DECFE96C20ED5676006D24A9 /* Sources */,
 				DECFE96D20ED5676006D24A9 /* Frameworks */,
 				DECFE96E20ED5676006D24A9 /* Resources */,
@@ -233,8 +555,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DECFE95F20ED5676006D24A9 /* LaunchScreen.storyboard in Resources */,
+				DE62F8F720ED5CDD001D7BA2 /* PatientStoryboard.storyboard in Resources */,
+				DEE560E820F91DC600E753E4 /* EnglishLocalizable.strings in Resources */,
+				DE62F8F520ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard in Resources */,
+				DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */,
 				DECFE95C20ED5676006D24A9 /* Assets.xcassets in Resources */,
 				DECFE95720ED5674006D24A9 /* Main.storyboard in Resources */,
+				DE62F8F320ED5CBE001D7BA2 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +581,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FAF09DC91DECEC981886549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P3HR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29582B381BF4379201A17A6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P3HRUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4ACD58438246485802F5BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-P3HR/Pods-P3HR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-P3HR/Pods-P3HR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E0FD6601B65101152A69E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P3HRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DECFE94A20ED5674006D24A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */,
+				DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */,
+				DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */,
+				DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */,
+				DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */,
+				DE62F8DD20ED5BBA001D7BA2 /* ParentViewController.swift in Sources */,
+				DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */,
+				DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */,
 				DECFE95A20ED5674006D24A9 /* P3HR.xcdatamodeld in Sources */,
+				DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */,
 				DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */,
+				DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */,
+				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
+				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
+				DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */,
+				DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */,
+				DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */,
+				DE62F8DA20ED5A4D001D7BA2 /* TableViewHelper.swift in Sources */,
+				DE62F8D820ED5A4D001D7BA2 /* UIView.swift in Sources */,
+				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
+				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
 				DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */,
+				DE62F8D220ED5923001D7BA2 /* AlertManager.swift in Sources */,
+				DE62F8C320ED5866001D7BA2 /* P3HRLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +744,14 @@
 				DECFE95E20ED5676006D24A9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE560EA20F91DC600E753E4 /* EnglishLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE560E920F91DC600E753E4 /* en */,
+			);
+			name = EnglishLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -367,7 +808,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +862,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -432,9 +873,11 @@
 		};
 		DECFE97A20ED5676006D24A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2381B65E543EACA7CD5262E /* Pods-P3HR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +892,11 @@
 		};
 		DECFE97B20ED5676006D24A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF16D2425B6D7EF1A7B350E /* Pods-P3HR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +911,7 @@
 		};
 		DECFE97D20ED5676006D24A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCDC15411E9DD7B9B1136E8 /* Pods-P3HRTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +932,7 @@
 		};
 		DECFE97E20ED5676006D24A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018D9C274AD4211E0FBFD366 /* Pods-P3HRTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +953,7 @@
 		};
 		DECFE98020ED5676006D24A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A9D308806A6DBBFCF858DF /* Pods-P3HRUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +973,7 @@
 		};
 		DECFE98120ED5676006D24A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8791EF9BD56C738D7431386 /* Pods-P3HRUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
