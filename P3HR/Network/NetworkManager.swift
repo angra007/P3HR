@@ -22,8 +22,10 @@ class NetworkManager {
                 else {
                     var status = 404
                     var message = "Unknown Error"
-                    if let s = result ["status"] as? Int, let m = result ["status"] as? String {
+                    if let s = result ["status"] as? Int {
                         status = s
+                    }
+                    if let m = result ["message"] as? String {
                         message = m
                     }
                     let error = NSError.init(domain: message, code: status, userInfo: nil)

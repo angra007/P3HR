@@ -109,7 +109,7 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
             else {
                
                 
-                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", completion: { (success, error) in
+                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", name: self.name, completion: { (success, error) in
                     if success == true {
                         self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
                     }
