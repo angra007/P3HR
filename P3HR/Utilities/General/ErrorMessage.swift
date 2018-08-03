@@ -15,6 +15,7 @@ enum ErrorMessage {
     case REGISTRATION_NAME_ERROR
     case REGISTRATION_PASSWORD_ERROR
     case REGISTRATION_CONFIRM_PASSWORD_ERROR
+    case UNKNOWN_ERROR
     
     var message : String {
         switch self {
@@ -26,6 +27,8 @@ enum ErrorMessage {
             return "Please enter your passowrd."
         case .REGISTRATION_CONFIRM_PASSWORD_ERROR:
             return "Password donot match."
+        case .UNKNOWN_ERROR:
+            return "Unknown Error"
         }
     }
 }

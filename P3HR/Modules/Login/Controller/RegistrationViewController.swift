@@ -8,8 +8,10 @@
 
 import UIKit
 
-class RegistrationViewController: ParentViewController {
+class RegistrationViewController: ParentViewController, AuthDelegate {
    
+    
+    var authPresentor : AuthPresentor!
     
     private var name : String = ""
     private var email : String = ""
@@ -88,8 +90,10 @@ class RegistrationViewController: ParentViewController {
         }
         addKeyBoardListener()
         
+        authPresentor = AuthPresentor.init(withDelegate: self)
+        
         registerButton.touchUpInside() {
-           
+            self.view.endEditing(true)
             if self.name.isBlank == true {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.REGISTRATION_EMAIL_ERROR.message)
             }
@@ -103,7 +107,16 @@ class RegistrationViewController: ParentViewController {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.REGISTRATION_CONFIRM_PASSWORD_ERROR.message)
             }
             else {
-                self.view.endEditing(true)
+               
+                
+                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", completion: { (success, error) in
+                    if success == true {
+                        self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                    }
+                    else if let error = error {
+                        AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+                    }
+                })
             }
         }
     }

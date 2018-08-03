@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import AlamofireNetworkActivityLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if window == nil {
             window = UIWindow (frame: UIScreen.main.bounds)
         }
+        
+        
+        NetworkActivityLogger.shared.level = .debug
+        NetworkActivityLogger.shared.startLogging()
         
         let vc = UIStoryboard.loginStoryboard().instantiateInitialViewController()
         window?.rootViewController = vc

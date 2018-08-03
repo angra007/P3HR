@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlamofireNetworkActivityLogger (2.3.0):
+    - Alamofire (~> 4.6)
   - IQKeyboardManagerSwift (5.0.0)
   - JVFloatLabeledTextField (1.2.1)
   - PMSuperButton (2.1.0)
@@ -8,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - AlamofireNetworkActivityLogger (= 2.3.0)
   - IQKeyboardManagerSwift (= 5.0.0)
   - JVFloatLabeledTextField
   - PMSuperButton
@@ -17,6 +20,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - AlamofireNetworkActivityLogger
     - IQKeyboardManagerSwift
     - JVFloatLabeledTextField
     - PMSuperButton
@@ -25,12 +29,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireNetworkActivityLogger: 6f3076652ab7fa6c819b59be08ea038d339e36d8
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   PMSuperButton: 2a441aa887765279dd90855ee03ad3b5ff56e582
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 52b74ccc34f2ddf6fb253eb125e85c43efd63d6e
+PODFILE CHECKSUM: 32cb5b4f34944335e9ff1b35467919b078c476ae
 
 COCOAPODS: 1.5.0

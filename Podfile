@@ -5,6 +5,7 @@ target 'P3HR' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireNetworkActivityLogger' , '2.3.0'
   pod 'SVProgressHUD'
   pod 'JVFloatLabeledTextField'
   pod 'IQKeyboardManagerSwift', '5.0.0'

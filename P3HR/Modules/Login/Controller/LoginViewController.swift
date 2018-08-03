@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: ParentViewController {
+class LoginViewController: ParentViewController, AuthDelegate {
 
     @IBOutlet weak var emailTextfield: P3HRTextField!
     
@@ -18,11 +18,25 @@ class LoginViewController: ParentViewController {
     @IBOutlet weak var forgotPaswordButton: P3HRButton!
     @IBOutlet weak var notYetRegisteredButton: P3HRButton!
     
+    var authPresentor : AuthPresentor!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        authPresentor = AuthPresentor.init(withDelegate: self)
+       
         loginButton.touchUpInside() {
-            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+            if let email = self.emailTextfield.text, let password = self.passwordTextfield.text {
+                self.authPresentor.login(withEmail: email, password: password, completion: { (success, error) in
+                    if success == true {
+                        self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                    }
+                    else if let error = error {
+                        AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+                    }
+                })
+            }
         }
         
         forgotPaswordButton.touchUpInside() {
@@ -45,3 +59,5 @@ class LoginViewController: ParentViewController {
     }
     
 }
+
+

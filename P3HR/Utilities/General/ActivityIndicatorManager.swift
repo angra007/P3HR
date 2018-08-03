@@ -11,7 +11,7 @@ import SVProgressHUD
 
 class ActivityIndicatorManager {
     
-    class func showActivityIndicator (withMessage message : String) {
+    class func showActivityIndicator () {
         SVProgressHUD.show()
     }
     
