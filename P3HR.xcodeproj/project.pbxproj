@@ -13,6 +13,8 @@
 		DE53B7962113C6B60015278A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7952113C6B60015278A /* NetworkManager.swift */; };
 		DE53B7982113C6C50015278A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7972113C6C50015278A /* NetworkConstants.swift */; };
 		DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7992113C9EC0015278A /* AuthPresentor.swift */; };
+		DE53B79C2114202E0015278A /* ProfessionalPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B79B2114202E0015278A /* ProfessionalPresentor.swift */; };
+		DE53B79E211422640015278A /* DefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B79D211422640015278A /* DefaultConfiguration.swift */; };
 		DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BA20ED5826001D7BA2 /* Image.swift */; };
 		DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BB20ED5826001D7BA2 /* StoryboardHelper.swift */; };
 		DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62F8BC20ED5826001D7BA2 /* StringHelper.swift */; };
@@ -30,6 +32,7 @@
 		DE62F8F320ED5CBE001D7BA2 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */; };
 		DE62F8F520ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */; };
 		DE62F8F720ED5CDD001D7BA2 /* PatientStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */; };
+		DE8998982114E86E00FB74B5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8998972114E86E00FB74B5 /* BaseModel.swift */; };
 		DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECF313220F2B5F300BD2683 /* LoginViewController.swift */; };
 		DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE95120ED5674006D24A9 /* AppDelegate.swift */; };
 		DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE95320ED5674006D24A9 /* ViewController.swift */; };
@@ -79,6 +82,8 @@
 		DE53B7952113C6B60015278A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DE53B7972113C6C50015278A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		DE53B7992113C9EC0015278A /* AuthPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresentor.swift; sourceTree = "<group>"; };
+		DE53B79B2114202E0015278A /* ProfessionalPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalPresentor.swift; sourceTree = "<group>"; };
+		DE53B79D211422640015278A /* DefaultConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConfiguration.swift; sourceTree = "<group>"; };
 		DE62F8BA20ED5826001D7BA2 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		DE62F8BB20ED5826001D7BA2 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
 		DE62F8BC20ED5826001D7BA2 /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfessionalStoryboard.storyboard; sourceTree = "<group>"; };
 		DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientStoryboard.storyboard; sourceTree = "<group>"; };
+		DE8998972114E86E00FB74B5 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		DECF313220F2B5F300BD2683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DECFE94E20ED5674006D24A9 /* P3HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P3HR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECFE95120ED5674006D24A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -309,6 +315,7 @@
 		DE62F8E820ED5C60001D7BA2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DE53B79B2114202E0015278A /* ProfessionalPresentor.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 		DE62F8E920ED5C6B001D7BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE53B79D211422640015278A /* DefaultConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 			children = (
 				DE53B7952113C6B60015278A /* NetworkManager.swift */,
 				DE53B7972113C6C50015278A /* NetworkConstants.swift */,
+				DE8998972114E86E00FB74B5 /* BaseModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -642,6 +651,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-P3HR/Pods-P3HR-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
@@ -652,6 +662,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
@@ -699,8 +710,10 @@
 				DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */,
 				DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */,
 				DECFE95A20ED5674006D24A9 /* P3HR.xcdatamodeld in Sources */,
+				DE53B79C2114202E0015278A /* ProfessionalPresentor.swift in Sources */,
 				DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */,
 				DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */,
+				DE53B79E211422640015278A /* DefaultConfiguration.swift in Sources */,
 				DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */,
 				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
 				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
@@ -708,6 +721,7 @@
 				DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */,
 				DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */,
 				DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */,
+				DE8998982114E86E00FB74B5 /* BaseModel.swift in Sources */,
 				DE62F8DA20ED5A4D001D7BA2 /* TableViewHelper.swift in Sources */,
 				DE62F8D820ED5A4D001D7BA2 /* UIView.swift in Sources */,
 				DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */,
@@ -901,7 +915,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -917,7 +934,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -933,7 +953,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -950,7 +974,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -966,7 +994,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -982,7 +1014,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,0 +1,39 @@
+//
+//  ProfessionalPresentor.swift
+//  P3HR
+//
+//  Created by Ankit Angra on 03/08/18.
+//  Copyright © 2018 Ankit Angra. All rights reserved.
+//
+
+import Foundation
+
+
+protocol ProfessionalPresentorDelegate : class {
+    
+}
+
+extension ProfessionalPresentorDelegate {
+    func showActivityIndicator () {
+        ActivityIndicatorManager.showActivityIndicator()
+    }
+    
+    func hideActivityIndicator () {
+        ActivityIndicatorManager.dismissActivityIndicator()
+    }
+}
+
+class ProfessionalPresentor {
+    
+    init(withDelegate delegate : ProfessionalPresentorDelegate) {
+        self.delegate = delegate
+    }
+    
+    private weak var delegate : ProfessionalPresentorDelegate!
+    
+    func getDefaults (completion : @escaping (ConfigurationDetails?, Error?) -> ()) {
+        NetworkManager<ConfigurationDetails>.getWithoutToken (forRequest: .defaults) { (response, error) in
+            completion (response, error)
+        }
+    }
+}

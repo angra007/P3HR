@@ -28,9 +28,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityLogger.shared.level = .debug
         NetworkActivityLogger.shared.startLogging()
         
-        let vc = UIStoryboard.loginStoryboard().instantiateInitialViewController()
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
+        
+        if UserDefaults.standard.string(forKey: "x-auth") != nil {
+            let vc = UIStoryboard.professionalStoryboard().instantiateInitialViewController()
+            window?.rootViewController = vc
+            window?.makeKeyAndVisible()
+        }
+        else {
+            let vc = UIStoryboard.loginStoryboard().instantiateInitialViewController()
+            window?.rootViewController = vc
+            window?.makeKeyAndVisible()
+        }
         
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().enableAutoToolbar = true

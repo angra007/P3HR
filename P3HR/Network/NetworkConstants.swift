@@ -13,6 +13,7 @@ let BASE_URL = "http://ec2-52-15-234-252.us-east-2.compute.amazonaws.com/"
 enum RequestType {
     case login
     case registeration
+    case defaults
 
     var url : String {
         switch self {
@@ -20,6 +21,8 @@ enum RequestType {
             return BASE_URL + "auth/login"
         case .registeration:
             return BASE_URL + "auth/signup"
+        case .defaults:
+            return BASE_URL + "defaults"
         }
     }
 }

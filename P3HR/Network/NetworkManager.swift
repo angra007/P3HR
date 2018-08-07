@@ -10,47 +10,38 @@ import Foundation
 import Alamofire
 
 
-class NetworkManager {
+class NetworkManager <T : BaseModel> {
     
-    class func handleResponse ( response : DataResponse <Any>, completion : @escaping (Any?,Error?) -> Void ) {
+    class func handleResponse ( response : DataResponse<T> ) -> (T?, Error?){
         switch(response.result) {
         case .success(_):
-            if let result = response.result.value as? [String : AnyObject] {
-                if response.response?.statusCode == 200 {
-                    completion (result, nil)
-                }
-                else {
-                    var status = 404
-                    var message = "Unknown Error"
-                    if let s = result ["status"] as? Int {
-                        status = s
-                    }
-                    if let m = result ["message"] as? String {
-                        message = m
-                    }
-                    let error = NSError.init(domain: message, code: status, userInfo: nil)
-                    completion (nil, error)
-                }
+            if let result = response.result.value {
+                return (result, nil)
             }
             else {
-                completion (nil, response.result.error)
+                let status = 404
+                let message = "Unknown Error"
+                let error = NSError.init(domain: message, code: status, userInfo: nil)
+                return (nil, error)
             }
         case .failure(_):
-            completion (nil, response.result.error)
+            return (nil, response.result.error)
         }
     }
     
-    class func getWithoutToken (forRequest request : RequestType, completion : @escaping (Any?,Error?) -> Void) {
+    class func getWithoutToken (forRequest request : RequestType,completion: @escaping (T?,Error?) -> Void)   {
         let url = request.url
-        Alamofire.request(url).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+        Alamofire.request(url).responseObject { (response: DataResponse<T>) in
+            let result  = handleResponse (response: response)
+            completion (result.0, result.1)
         }
     }
     
-    class func postWithoutToken (forRequest request : RequestType, withData data : [String : AnyObject], completion:  @escaping (Any?,Error?) -> Void) {
+    class func postWithoutToken (forRequest request : RequestType, withData data : Parameters, completion:  @escaping (T?,Error?) -> Void)   {
         let url = request.url
-        Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+        Alamofire.request(url,  parameters: data).responseObject { (response: DataResponse<T>) in
+            let result  = handleResponse (response: response)
+            completion (result.0, result.1)
         }
     }
     
@@ -62,7 +53,7 @@ class NetworkManager {
         headers ["x-auth"] = token
         
         Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+            //handleResponse(response:response , completion: completion)
         }
     }
     
@@ -74,7 +65,7 @@ class NetworkManager {
         headers ["x-auth"] = token
 
         Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+            //handleResponse(response:response , completion: completion)
         }
     }
     
@@ -85,7 +76,7 @@ class NetworkManager {
         headers ["x-auth"] = token
 
         Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+            //handleResponse(response:response , completion: completion)
         }
     }
     
@@ -96,7 +87,7 @@ class NetworkManager {
         headers ["x-auth"] = token
 
         Alamofire.request(url, method: .put, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) -> Void in
-            handleResponse(response:response , completion: completion)
+            //handleResponse(response:response , completion: completion)
         }
     }
 }

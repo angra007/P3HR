@@ -9,8 +9,10 @@
 import UIKit
 import SideMenu
 
-class ProfessionalHomeScreen: ParentViewController {
+class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelegate{
 
+    private var profilePresentor : ProfessionalPresentor!
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -25,6 +27,7 @@ class ProfessionalHomeScreen: ParentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        profilePresentor = ProfessionalPresentor.init(withDelegate: self)
         let vc = UIStoryboard.professionalStoryboard().instantiateViewController(withIdentifier:UIStoryboard.StoryboardIdentifiers.professionalMenu.rawValue )
         let menuRightNavigationController = UISideMenuNavigationController(rootViewController: vc)
         menuRightNavigationController.isNavigationBarHidden = true
@@ -32,6 +35,10 @@ class ProfessionalHomeScreen: ParentViewController {
         SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         SideMenuManager.default.menuAnimationBackgroundColor = UIColor.white
+        
+        profilePresentor.getDefaults { (defaults, error) in
+            
+        }
         // Do any additional setup after loading the view.
     }
     

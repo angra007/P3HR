@@ -11,6 +11,7 @@ target 'P3HR' do
   pod 'IQKeyboardManagerSwift', '5.0.0'
   pod 'PMSuperButton'
   pod 'SideMenu'
+  pod 'EVReflection/Alamofire'
   # Pods for P3HR
 
   target 'P3HRTests' do
