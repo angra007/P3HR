@@ -10,7 +10,7 @@ import UIKit
 import SideMenu
 
 class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelegate{
-
+    
     private var profilePresentor : ProfessionalPresentor!
     
     @IBOutlet weak var tableView: UITableView! {
@@ -36,13 +36,28 @@ class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelega
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         SideMenuManager.default.menuAnimationBackgroundColor = UIColor.white
         
-        profilePresentor.getDefaults { (defaults, error) in
-            
+        profilePresentor.getDefaults { [unowned self] (defaults, error) in
+            if let error = error {
+                AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+            }
+            else {
+                let vc = UIStoryboard.professionalStoryboard().instantiateViewController(withIdentifier: UIStoryboard.StoryboardIdentifiers.professionalProfile.rawValue) as! ProfessionalProfileUpdateViewController
+                vc.delegate = self
+                vc.configurationDetails = defaults
+                self.present(vc, animated: true, completion: nil)
+            }
         }
-        // Do any additional setup after loading the view.
+
     }
     
 }
+
+extension ProfessionalHomeScreen : ProfessionalProfileUpdateDelegate {
+    func dismiss(viewController: ProfessionalProfileUpdateViewController) {
+        viewController.dismiss(animated: true, completion: nil)
+    }
+}
+
 
 extension ProfessionalHomeScreen : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {

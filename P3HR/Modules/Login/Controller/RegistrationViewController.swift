@@ -81,18 +81,18 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         isAPatient = true
-        isPatientButton.touchUpInside() {
+        isPatientButton.touchUpInside() { [unowned self] in
             self.isAPatient = true
         }
         
-        isProfessionalButton.touchUpInside() {
+        isProfessionalButton.touchUpInside() { [unowned self] in
             self.isAPatient = false
         }
         addKeyBoardListener()
         
         authPresentor = AuthPresentor.init(withDelegate: self)
         
-        registerButton.touchUpInside() {
+        registerButton.touchUpInside() { [unowned self] in
             self.view.endEditing(true)
             if self.name.isBlank == true {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.REGISTRATION_EMAIL_ERROR.message)
@@ -109,12 +109,17 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
             else {
                
                 
-                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", name: self.name, completion: { (success, error) in
-                    if success == true {
-                        self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
-                    }
-                    else if let error = error {
+                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", name: self.name, completion: { (type, error) in
+                    if let error = error {
                         AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+                    }
+                    else {
+                        if type! == "Patient" {
+                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                        }
+                        else {
+                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                        }
                     }
                 })
             }

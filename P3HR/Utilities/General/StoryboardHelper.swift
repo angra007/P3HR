@@ -13,6 +13,9 @@ extension UIStoryboard {
         case registeration = "RegistrationVC"
         case menu = "menuVC"
         case professionalMenu = "professionalMenuVC"
+        case professionalProfile = "professionalProfileUpdateVC"
+        
+        
         
         case dashboardTabVC = "dashboardTabBar"
         case dashboard = "dash"

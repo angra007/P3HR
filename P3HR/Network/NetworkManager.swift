@@ -39,7 +39,7 @@ class NetworkManager <T : BaseModel> {
     
     class func postWithoutToken (forRequest request : RequestType, withData data : Parameters, completion:  @escaping (T?,Error?) -> Void)   {
         let url = request.url
-        Alamofire.request(url,  parameters: data).responseObject { (response: DataResponse<T>) in
+        Alamofire.request(url, method: .post, parameters: data).responseObject { (response: DataResponse<T>) in
             let result  = handleResponse (response: response)
             completion (result.0, result.1)
         }

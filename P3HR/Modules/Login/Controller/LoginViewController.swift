@@ -26,14 +26,19 @@ class LoginViewController: ParentViewController, AuthDelegate {
 
         authPresentor = AuthPresentor.init(withDelegate: self)
        
-        loginButton.touchUpInside() {
+        loginButton.touchUpInside() { [unowned self] in
             if let email = self.emailTextfield.text, let password = self.passwordTextfield.text {
-                self.authPresentor.login(withEmail: email, password: password, completion: { (success, error) in
-                    if success == true {
-                        self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
-                    }
-                    else if let error = error {
+                self.authPresentor.login(withEmail: email, password: password, completion: { (type, error) in
+                    if let error = error {
                         AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+                    }
+                    else {
+                        if type! == "Patient" {
+                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                        }
+                        else {
+                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                        }
                     }
                 })
             }
@@ -43,7 +48,7 @@ class LoginViewController: ParentViewController, AuthDelegate {
             print("Here1")
         }
         
-        notYetRegisteredButton.touchUpInside() {
+        notYetRegisteredButton.touchUpInside() { [unowned self] in
             self.push(withIdentifier: .registeration, fromStoryboard: UIStoryboard.loginStoryboard())
         }
     }

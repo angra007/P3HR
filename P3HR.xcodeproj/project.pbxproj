@@ -10,6 +10,11 @@
 		3E24F90640AC14FB4E3C5958 /* Pods_P3HRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241BA549CC45C3829721BBCE /* Pods_P3HRUITests.framework */; };
 		88843DA0DF6873AD8373FBBB /* Pods_P3HR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A48DE3A87559891F708C52B /* Pods_P3HR.framework */; };
 		ABB4A76CB426D964D6842F3F /* Pods_P3HRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */; };
+		DE385E58211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */; };
+		DE385E5C211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E5A211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift */; };
+		DE385E5D211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */; };
+		DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E60211A47ED00CFBDA0 /* P3HRDropDownTextField.swift */; };
+		DE385E63211A689400CFBDA0 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E62211A689400CFBDA0 /* AuthModel.swift */; };
 		DE53B7962113C6B60015278A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7952113C6B60015278A /* NetworkManager.swift */; };
 		DE53B7982113C6C50015278A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7972113C6C50015278A /* NetworkConstants.swift */; };
 		DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7992113C9EC0015278A /* AuthPresentor.swift */; };
@@ -79,6 +84,11 @@
 		957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P3HRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCDC15411E9DD7B9B1136E8 /* Pods-P3HRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRTests/Pods-P3HRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8791EF9BD56C738D7431386 /* Pods-P3HRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalProfileUpdateViewController.swift; sourceTree = "<group>"; };
+		DE385E5A211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileUpdateDropDownTableViewCell.swift; path = ProfileUpdateDropDown/ProfileUpdateDropDownTableViewCell.swift; sourceTree = "<group>"; };
+		DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileUpdateDropDownTableViewCell.xib; path = ProfileUpdateDropDown/ProfileUpdateDropDownTableViewCell.xib; sourceTree = "<group>"; };
+		DE385E60211A47ED00CFBDA0 /* P3HRDropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRDropDownTextField.swift; sourceTree = "<group>"; };
+		DE385E62211A689400CFBDA0 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		DE53B7952113C6B60015278A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DE53B7972113C6C50015278A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		DE53B7992113C9EC0015278A /* AuthPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresentor.swift; sourceTree = "<group>"; };
@@ -182,6 +192,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DE385E59211A470F00CFBDA0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE385E5A211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift */,
+				DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		DE62F8B920ED577A001D7BA2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +218,7 @@
 				DE62F8C620ED5890001D7BA2 /* P3HRTextView.swift */,
 				DE62F8C820ED58B7001D7BA2 /* P3HRButton.swift */,
 				DED276E720F2D56C00A870FC /* P3HRUtilities.swift */,
+				DE385E60211A47ED00CFBDA0 /* P3HRDropDownTextField.swift */,
 			);
 			path = P3HRSpecific;
 			sourceTree = "<group>";
@@ -274,6 +294,7 @@
 		DE62F8E320ED5C2F001D7BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE385E62211A689400CFBDA0 /* AuthModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +329,7 @@
 			children = (
 				DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */,
 				DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */,
+				DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +353,7 @@
 		DE62F8EA20ED5C71001D7BA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE385E59211A470F00CFBDA0 /* TableViewCell */,
 				DE62F8EB20ED5C75001D7BA2 /* Storyboard */,
 			);
 			path = View;
@@ -582,6 +605,7 @@
 				DE62F8F720ED5CDD001D7BA2 /* PatientStoryboard.storyboard in Resources */,
 				DEE560E820F91DC600E753E4 /* EnglishLocalizable.strings in Resources */,
 				DE62F8F520ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard in Resources */,
+				DE385E5D211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib in Resources */,
 				DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */,
 				DECFE95C20ED5676006D24A9 /* Assets.xcassets in Resources */,
 				DECFE95720ED5674006D24A9 /* Main.storyboard in Resources */,
@@ -705,6 +729,7 @@
 				DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */,
 				DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */,
 				DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */,
+				DE385E58211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift in Sources */,
 				DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */,
 				DE62F8DD20ED5BBA001D7BA2 /* ParentViewController.swift in Sources */,
 				DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */,
@@ -715,6 +740,8 @@
 				DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */,
 				DE53B79E211422640015278A /* DefaultConfiguration.swift in Sources */,
 				DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */,
+				DE385E63211A689400CFBDA0 /* AuthModel.swift in Sources */,
+				DE385E5C211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift in Sources */,
 				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
 				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
 				DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */,
@@ -727,6 +754,7 @@
 				DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */,
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
+				DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */,
 				DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */,
 				DEE560F720F9468800E753E4 /* ProfessionalHomeScreen.swift in Sources */,
 				DE62F8D220ED5923001D7BA2 /* AlertManager.swift in Sources */,

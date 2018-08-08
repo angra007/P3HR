@@ -30,43 +30,43 @@ class AuthPresentor {
     
     private weak var delegate : AuthDelegate!
     
-    private func handleAuth (response : Any? , error : Error?, completion : ((Bool, Error?) -> ())) {
+    private func handleAuth (response : AuthModel? , error : Error?, completion : ((String?, Error?) -> ())) {
         self.delegate.hideActivityIndicator()
         if let error = error {
-            completion (false, error)
+            completion (nil, error)
         }
-        else if let result = response as? [String : AnyObject] {
-            if let token = result ["token"] as? String, let id =  result ["id"] as? String{
+        else if let result = response  {
+            if let token = result.token, let id = result.id {
                 UserDefaults.standard.set(token, forKey: "x-auth")
                 UserDefaults.standard.set(id, forKey: "profileID")
-                completion (true, nil)
+                completion (result.type, nil)
             }
             else {
                 let message = ErrorMessage.UNKNOWN_ERROR.message
                 let status = 404
                 let error = NSError.init(domain: message, code: status, userInfo: nil)
-                completion (false,error )
+                completion (nil,error )
             }
         }
         else {
             let message = ErrorMessage.UNKNOWN_ERROR.message
             let status = 404
             let error = NSError.init(domain: message, code: status, userInfo: nil)
-            completion (false, error)
+            completion (nil, error)
         }
     }
     
-    func login (withEmail email : String, password : String, completion : @escaping (Bool, Error?) -> ()) {
+    func login (withEmail email : String, password : String, completion : @escaping (String?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email
         dict ["password"] = password
-        NetworkManager.postWithoutToken(forRequest: .login, withData: dict as [String : AnyObject]) { (response, error) in
+        NetworkManager<AuthModel>.postWithoutToken(forRequest: .login, withData: dict as [String : AnyObject]) { (response, error) in
             self.handleAuth(response: response, error: error, completion: completion)
         }
     }
     
-    func register (withEmail email : String, password : String,type : String , name : String,completion : @escaping (Bool, Error?) -> ()) {
+    func register (withEmail email : String, password : String,type : String , name : String,completion : @escaping (String?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email
@@ -74,7 +74,7 @@ class AuthPresentor {
         dict ["type"] = type
         dict ["name"] = name
         
-        NetworkManager.postWithoutToken(forRequest: .registeration, withData: dict as [String : AnyObject]) { (response, error) in
+        NetworkManager <AuthModel>.postWithoutToken(forRequest: .registeration, withData: dict as [String : AnyObject]) { (response, error) in
             self.delegate.hideActivityIndicator()
             self.handleAuth(response: response, error: error, completion: completion)
         }

@@ -21,6 +21,11 @@ class ParentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func present (withIdentifier identifier : UIStoryboard.StoryboardIdentifiers, fromStoryboard storyboard : UIStoryboard) {
+        //let vc = storyboard.instantiateViewController(withIdentifier: identifier.rawValue)
+        //self.present(vc!, animated: true, completion: nil)
+    }
+    
     func push (withIdentifier identifier : UIStoryboard.StoryboardIdentifiers, fromStoryboard storyboard : UIStoryboard) {
         let vc = storyboard.instantiateViewController(withIdentifier: identifier.rawValue)
         self.navigationController?.pushViewController(vc, animated: true)

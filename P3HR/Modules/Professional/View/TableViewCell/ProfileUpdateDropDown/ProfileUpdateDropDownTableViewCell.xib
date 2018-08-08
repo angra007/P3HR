@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileUpdateDropDownTableViewCell" id="KGk-i7-Jjw" customClass="ProfileUpdateDropDownTableViewCell" customModule="P3HR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-Fp-Wen">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-27-NHV">
+                                <rect key="frame" x="16" y="4" width="304" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjr-Lz-X8a" customClass="P3HRDropDownTextField" customModule="P3HR" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="284" height="49.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FU3-8o-dsc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropDown" translatesAutoresizingMaskIntoConstraints="NO" id="dP1-br-Roi">
+                                <rect key="frame" x="300" y="36" width="18" height="18"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dP1-br-Roi" firstAttribute="centerY" secondItem="mjr-Lz-X8a" secondAttribute="centerY" id="PdN-je-4MC"/>
+                            <constraint firstAttribute="trailing" secondItem="V77-27-NHV" secondAttribute="trailing" id="QVi-CT-esl"/>
+                            <constraint firstItem="dP1-br-Roi" firstAttribute="leading" secondItem="mjr-Lz-X8a" secondAttribute="trailing" id="TEs-9e-cR7"/>
+                            <constraint firstAttribute="bottom" secondItem="mjr-Lz-X8a" secondAttribute="bottom" id="Tgh-HB-V8a"/>
+                            <constraint firstItem="mjr-Lz-X8a" firstAttribute="leading" secondItem="cl3-Fp-Wen" secondAttribute="leading" constant="16" id="bTs-fn-0Ud"/>
+                            <constraint firstItem="V77-27-NHV" firstAttribute="top" secondItem="cl3-Fp-Wen" secondAttribute="top" constant="4" id="g5n-tn-TWO"/>
+                            <constraint firstAttribute="height" constant="70" id="hZF-jy-dKO"/>
+                            <constraint firstAttribute="trailing" secondItem="mjr-Lz-X8a" secondAttribute="trailing" constant="20" id="kPo-3B-Nic"/>
+                            <constraint firstItem="V77-27-NHV" firstAttribute="leading" secondItem="cl3-Fp-Wen" secondAttribute="leading" constant="16" id="qek-jo-wer"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cl3-Fp-Wen" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ecj-cs-zZW"/>
+                    <constraint firstItem="cl3-Fp-Wen" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g6W-1T-ane"/>
+                    <constraint firstAttribute="bottom" secondItem="cl3-Fp-Wen" secondAttribute="bottom" id="i3C-aG-tYD"/>
+                    <constraint firstAttribute="trailing" secondItem="cl3-Fp-Wen" secondAttribute="trailing" id="oTA-aa-pu5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dropDownTextField" destination="mjr-Lz-X8a" id="Ly2-0c-rnz"/>
+                <outlet property="headingLabel" destination="V77-27-NHV" id="V8w-Bx-EPM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropDown" width="18" height="18"/>
+    </resources>
+</document>

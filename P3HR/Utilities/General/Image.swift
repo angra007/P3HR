@@ -8,7 +8,9 @@
 
 import UIKit
 
-public enum Key {
+public enum Key : String {
+    
+    case dropDown = "dropDown"
     
 }
 
