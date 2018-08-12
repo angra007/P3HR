@@ -9,7 +9,6 @@ PODS:
   - IQKeyboardManagerSwift (5.0.0)
   - JVFloatLabeledTextField (1.2.1)
   - PMSuperButton (2.1.0)
-  - SideMenu (3.1.5)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -19,7 +18,6 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift (= 5.0.0)
   - JVFloatLabeledTextField
   - PMSuperButton
-  - SideMenu
   - SVProgressHUD
 
 SPEC REPOS:
@@ -30,7 +28,6 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - JVFloatLabeledTextField
     - PMSuperButton
-    - SideMenu
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -40,9 +37,8 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   PMSuperButton: 2a441aa887765279dd90855ee03ad3b5ff56e582
-  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 2eed56a5f6b95bfa5d3a962f5f12c5123f648692
+PODFILE CHECKSUM: 4346092123acc4f6e8dca1f7377374c236db9ad9
 
 COCOAPODS: 1.5.0

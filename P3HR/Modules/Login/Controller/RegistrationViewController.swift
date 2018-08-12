@@ -13,22 +13,32 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
     
     var authPresentor : AuthPresentor!
     
-    private var name : String = ""
+    private var firstName : String = ""
+    private var secondName : String = ""
     private var email : String = ""
     private var password : String = ""
     private var confirmPassword : String = ""
-    let NAME_TAG = 10001
+    
+    let FIRST_NAME_TAG = 10001
     let EMAIL_TAG = 10002
     let PASSWORD_TAG = 10003
     let CONFIRM_PASSWORD_TAG = 10004
+    let SECOND_NAME_TAG = 10005
     
     
     @IBOutlet weak var registerButton: P3HRButton!
     
-    @IBOutlet weak var nameTextField: P3HRTextField! {
+    @IBOutlet weak var firstNameTextField: P3HRTextField! {
         didSet {
-            nameTextField.delegate = self
-            nameTextField.tag = NAME_TAG
+            firstNameTextField.delegate = self
+            firstNameTextField.tag = FIRST_NAME_TAG
+        }
+    }
+    
+    @IBOutlet weak var secondNameTextField: P3HRTextField! {
+        didSet {
+            secondNameTextField.delegate = self
+            secondNameTextField.tag = SECOND_NAME_TAG
         }
     }
     
@@ -94,7 +104,7 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
         
         registerButton.touchUpInside() { [unowned self] in
             self.view.endEditing(true)
-            if self.name.isBlank == true {
+            if self.firstName.isBlank == true {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.REGISTRATION_EMAIL_ERROR.message)
             }
             else if self.email.isBlank == true {
@@ -108,14 +118,21 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
             }
             else {
                
+                var type : String = ""
+                if self.isAPatient == true {
+                    type = "Patient"
+                }
+                else {
+                    type = "HealthProfessional"
+                }
                 
-                self.authPresentor.register(withEmail: self.email , password: self.password, type: "Patient", name: self.name, completion: { (type, error) in
+                self.authPresentor.register(withEmail: self.email , password: self.password, type: type, firstName: self.firstName, secondName: self.secondName,completion: { (type, error) in
                     if let error = error {
                         AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
                     }
                     else {
-                        if type! == "Patient" {
-                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                        if self.isAPatient == true  {
+                            self.presetStroryboard(storyboard: UIStoryboard.patientStoryboard())
                         }
                         else {
                             self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
@@ -128,7 +145,7 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.nameTextField.becomeFirstResponder()
+        self.firstNameTextField.becomeFirstResponder()
     }
     
     func addKeyBoardListener() {
@@ -165,8 +182,11 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
 extension RegistrationViewController : UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let text  = textField.text {
-            if textField.tag == NAME_TAG {
-                self.name = text
+            if textField.tag == FIRST_NAME_TAG {
+                self.firstName = text
+            }
+            else if textField.tag == SECOND_NAME_TAG {
+                self.secondName = text
             }
             else if textField.tag == EMAIL_TAG {
                 self.email = text

@@ -10,7 +10,6 @@ target 'P3HR' do
   pod 'JVFloatLabeledTextField'
   pod 'IQKeyboardManagerSwift', '5.0.0'
   pod 'PMSuperButton'
-  pod 'SideMenu'
   pod 'EVReflection/Alamofire'
   # Pods for P3HR
 

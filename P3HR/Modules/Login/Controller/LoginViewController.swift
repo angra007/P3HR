@@ -34,7 +34,7 @@ class LoginViewController: ParentViewController, AuthDelegate {
                     }
                     else {
                         if type! == "Patient" {
-                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                            self.presetStroryboard(storyboard: UIStoryboard.patientStoryboard())
                         }
                         else {
                             self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())

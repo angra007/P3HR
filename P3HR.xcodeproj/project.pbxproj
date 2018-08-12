@@ -15,6 +15,7 @@
 		DE385E5D211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */; };
 		DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E60211A47ED00CFBDA0 /* P3HRDropDownTextField.swift */; };
 		DE385E63211A689400CFBDA0 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E62211A689400CFBDA0 /* AuthModel.swift */; };
+		DE385E65211A7FF200CFBDA0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E64211A7FF200CFBDA0 /* Profile.swift */; };
 		DE53B7962113C6B60015278A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7952113C6B60015278A /* NetworkManager.swift */; };
 		DE53B7982113C6C50015278A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7972113C6C50015278A /* NetworkConstants.swift */; };
 		DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53B7992113C9EC0015278A /* AuthPresentor.swift */; };
@@ -89,6 +90,7 @@
 		DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileUpdateDropDownTableViewCell.xib; path = ProfileUpdateDropDown/ProfileUpdateDropDownTableViewCell.xib; sourceTree = "<group>"; };
 		DE385E60211A47ED00CFBDA0 /* P3HRDropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRDropDownTextField.swift; sourceTree = "<group>"; };
 		DE385E62211A689400CFBDA0 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		DE385E64211A7FF200CFBDA0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DE53B7952113C6B60015278A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DE53B7972113C6C50015278A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		DE53B7992113C9EC0015278A /* AuthPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresentor.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				DE53B79D211422640015278A /* DefaultConfiguration.swift */,
+				DE385E64211A7FF200CFBDA0 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -680,7 +683,6 @@
 				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -691,7 +693,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -745,6 +746,7 @@
 				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
 				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
 				DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */,
+				DE385E65211A7FF200CFBDA0 /* Profile.swift in Sources */,
 				DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */,
 				DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */,
 				DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */,
@@ -943,10 +945,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -962,10 +961,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -981,11 +977,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1002,11 +994,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1022,11 +1010,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1042,11 +1026,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

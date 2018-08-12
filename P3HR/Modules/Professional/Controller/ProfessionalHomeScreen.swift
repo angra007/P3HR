@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SideMenu
 
 class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelegate{
     
@@ -21,20 +20,14 @@ class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelega
         }
     }
     @IBAction func didTapMenuButton(_ sender: UIBarButtonItem) {
-        present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         profilePresentor = ProfessionalPresentor.init(withDelegate: self)
-        let vc = UIStoryboard.professionalStoryboard().instantiateViewController(withIdentifier:UIStoryboard.StoryboardIdentifiers.professionalMenu.rawValue )
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: vc)
-        menuRightNavigationController.isNavigationBarHidden = true
-        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        SideMenuManager.default.menuAnimationBackgroundColor = UIColor.white
+        
         
         profilePresentor.getDefaults { [unowned self] (defaults, error) in
             if let error = error {
@@ -47,7 +40,14 @@ class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelega
                 self.present(vc, animated: true, completion: nil)
             }
         }
-
+        
+        profilePresentor.getProfile { (profile, error) in
+            if let error = error {
+                AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+            }
+            else {
+            }
+        }
     }
     
 }

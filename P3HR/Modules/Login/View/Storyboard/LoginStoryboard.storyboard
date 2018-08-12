@@ -157,12 +157,12 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="597"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kk4-jo-hTj">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="241"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-q4-uZr">
-                                                <rect key="frame" x="16" y="0.0" width="343" height="241"/>
+                                                <rect key="frame" x="16" y="0.0" width="343" height="290"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeN-t1-puY" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KeN-t1-puY" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="5zo-DM-0K6"/>
@@ -171,26 +171,35 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-gm-6l4" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Second Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-9S-H5t" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="49" width="343" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="6KU-rg-mb0"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-gm-6l4" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="98" width="343" height="45"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-JV-xBv" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="98" width="343" height="45"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nc-Hw-NsV" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="147" width="343" height="45"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-MX-NVe">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nc-Hw-NsV" customClass="P3HRTextField" customModule="P3HR" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="196" width="343" height="45"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-MX-NVe">
+                                                        <rect key="frame" x="0.0" y="245" width="343" height="45"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vp-x1-cfl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="45"/>
@@ -341,14 +350,15 @@
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="8nc-Hw-NsV" id="iWn-fk-EBB"/>
                         <outlet property="emailTextField" destination="jX5-gm-6l4" id="Orc-rq-FhS"/>
+                        <outlet property="firstNameTextField" destination="KeN-t1-puY" id="ltD-AP-YuC"/>
                         <outlet property="isPatientButton" destination="Qai-ej-9kd" id="CMs-GT-th2"/>
                         <outlet property="isProfessionalButton" destination="4ca-ig-Fz5" id="X8N-d2-fff"/>
-                        <outlet property="nameTextField" destination="KeN-t1-puY" id="ltD-AP-YuC"/>
                         <outlet property="passwordTextField" destination="Bco-JV-xBv" id="LGQ-Uu-kbI"/>
                         <outlet property="patientCheckImageView" destination="i75-OM-acb" id="eND-aG-Xa3"/>
                         <outlet property="professionalCheckImage" destination="xm9-aS-JTE" id="gou-N9-sdj"/>
                         <outlet property="registerButton" destination="Nbz-5J-qah" id="dTG-is-G7a"/>
                         <outlet property="registerButtonBottomConstraint" destination="UxE-Df-BhE" id="F4D-0z-BtX"/>
+                        <outlet property="secondNameTextField" destination="U6D-9S-H5t" id="TKk-ay-6ys"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQZ-hs-hiU" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -66,13 +66,14 @@ class AuthPresentor {
         }
     }
     
-    func register (withEmail email : String, password : String,type : String , name : String,completion : @escaping (String?, Error?) -> ()) {
+    func register (withEmail email : String, password : String,type : String , firstName : String, secondName : String, completion : @escaping (String?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email
         dict ["password"] = password
         dict ["type"] = type
-        dict ["name"] = name
+        dict ["firstName"] = firstName
+        dict ["lastName"] = secondName
         
         NetworkManager <AuthModel>.postWithoutToken(forRequest: .registeration, withData: dict as [String : AnyObject]) { (response, error) in
             self.delegate.hideActivityIndicator()

@@ -45,15 +45,24 @@ class NetworkManager <T : BaseModel> {
         }
     }
     
-    class func get (forRequest request : RequestType, completion : @escaping (Any?,Error?) -> Void) {
+    class func get (forRequest request : RequestType, completion : @escaping (T?,Error?) -> Void) {
         let url = request.url
-        
         var headers = [String: String]()
-        let token = UserDefaults.standard.string(forKey: "x-auth")
+        let token = UserDefaults.standard.string(forKey: "x-auth")!
         headers ["x-auth"] = token
-        
-        Alamofire.request(url, headers: headers).responseJSON { (response) -> Void in
-            //handleResponse(response:response , completion: completion)
+        Alamofire.request(url, headers : headers).responseObject { (response: DataResponse<T>) in
+            let result  = handleResponse (response: response)
+            completion (result.0, result.1)
+        }
+    }
+    
+    class func get (forURL url : String, completion : @escaping (T?,Error?) -> Void) {
+        var headers = [String: String]()
+        let token = UserDefaults.standard.string(forKey: "x-auth")!
+        headers ["x-auth"] = token
+        Alamofire.request(url, headers : headers).responseObject { (response: DataResponse<T>) in
+            let result  = handleResponse (response: response)
+            completion (result.0, result.1)
         }
     }
     

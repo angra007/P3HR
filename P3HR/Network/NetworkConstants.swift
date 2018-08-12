@@ -14,6 +14,7 @@ enum RequestType {
     case login
     case registeration
     case defaults
+    case profile
 
     var url : String {
         switch self {
@@ -23,6 +24,8 @@ enum RequestType {
             return BASE_URL + "auth/signup"
         case .defaults:
             return BASE_URL + "defaults"
+        case .profile:
+            return BASE_URL + "profile"
         }
     }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SideMenu
 
 class PatientHomeViewController: ParentViewController {
 
@@ -20,19 +19,13 @@ class PatientHomeViewController: ParentViewController {
     }
     
     @IBAction func didTapMenuButton(_ sender: UIBarButtonItem) {
-        present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vc = UIStoryboard.patientStoryboard().instantiateViewController(withIdentifier:UIStoryboard.StoryboardIdentifiers.menu.rawValue )
-        let menuRightNavigationController = UISideMenuNavigationController(rootViewController: vc)
-        menuRightNavigationController.isNavigationBarHidden = true
-        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-        SideMenuManager.default.menuAnimationBackgroundColor = UIColor.white
+        
         // Do any additional setup after loading the view.
     }
 }
