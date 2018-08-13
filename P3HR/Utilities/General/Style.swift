@@ -47,6 +47,9 @@ public enum ThemeColorKey {
     case formFieldDividerActiveColor
     case formFieldBorderActiveColor
     case formFieldBorderNormalColor
+    
+    case appBackgroundColor
+    
 }
 
 public class Styles {
@@ -100,6 +103,8 @@ public class Styles {
              .formFieldDividerNormalColor,
              .formFieldBorderNormalColor:
             return #colorLiteral(red: 0.6078431373, green: 0.6078431373, blue: 0.6078431373, alpha: 1)
+        case .appBackgroundColor:
+            return #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 1, alpha: 1)
         case .formFieldTextColor:
             return .black
         default:

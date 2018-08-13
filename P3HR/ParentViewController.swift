@@ -13,6 +13,7 @@ class ParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = Styles.color(forKey: .appBackgroundColor)
         // Do any additional setup after loading the view.
     }
 

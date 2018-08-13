@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         if UserDefaults.standard.string(forKey: "x-auth") != nil {
-            let vc = UIStoryboard.loginStoryboard().instantiateInitialViewController()
+            let vc = UIStoryboard.patientStoryboard().instantiateInitialViewController()
             window?.rootViewController = vc
             window?.makeKeyAndVisible()
         }

@@ -50,14 +50,16 @@
 		DECFE97520ED5676006D24A9 /* P3HRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE97420ED5676006D24A9 /* P3HRUITests.swift */; };
 		DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED276E520F2D46200A870FC /* RegistrationViewController.swift */; };
 		DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED276E720F2D56C00A870FC /* P3HRUtilities.swift */; };
+		DEDE515F2120FAF100353394 /* PatientTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE515E2120FAF100353394 /* PatientTabBarViewController.swift */; };
+		DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51602120FB4400353394 /* PatientProfileViewController.swift */; };
+		DEDE51632120FB5500353394 /* PatientRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51622120FB5500353394 /* PatientRecordViewController.swift */; };
+		DEDE5165212100EC00353394 /* PatientNewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */; };
 		DEE560E820F91DC600E753E4 /* EnglishLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEE560EA20F91DC600E753E4 /* EnglishLocalizable.strings */; };
 		DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */; };
 		DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */; };
 		DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */; };
 		DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */; };
-		DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F420F93EB200E753E4 /* MenuViewController.swift */; };
 		DEE560F720F9468800E753E4 /* ProfessionalHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */; };
-		DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,14 +133,16 @@
 		DECFE97620ED5676006D24A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DED276E520F2D46200A870FC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		DED276E720F2D56C00A870FC /* P3HRUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3HRUtilities.swift; sourceTree = "<group>"; };
+		DEDE515E2120FAF100353394 /* PatientTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTabBarViewController.swift; sourceTree = "<group>"; };
+		DEDE51602120FB4400353394 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
+		DEDE51622120FB5500353394 /* PatientRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordViewController.swift; sourceTree = "<group>"; };
+		DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNewRecordViewController.swift; sourceTree = "<group>"; };
 		DEE560E920F91DC600E753E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EnglishLocalizable.strings; sourceTree = "<group>"; };
 		DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
 		DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaitentHomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaitentHomeCellTableViewCell.xib; sourceTree = "<group>"; };
-		DEE560F420F93EB200E753E4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHomeScreen.swift; sourceTree = "<group>"; };
-		DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalMenuViewController.swift; sourceTree = "<group>"; };
 		E2381B65E543EACA7CD5262E /* Pods-P3HR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HR/Pods-P3HR.debug.xcconfig"; sourceTree = "<group>"; };
 		F7A9D308806A6DBBFCF858DF /* Pods-P3HRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -330,7 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				DEE560F620F9468800E753E4 /* ProfessionalHomeScreen.swift */,
-				DEE560F820F946A100E753E4 /* ProfessionalMenuViewController.swift */,
 				DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */,
 			);
 			path = Controller;
@@ -374,7 +377,10 @@
 			isa = PBXGroup;
 			children = (
 				DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */,
-				DEE560F420F93EB200E753E4 /* MenuViewController.swift */,
+				DEDE515E2120FAF100353394 /* PatientTabBarViewController.swift */,
+				DEDE51602120FB4400353394 /* PatientProfileViewController.swift */,
+				DEDE51622120FB5500353394 /* PatientRecordViewController.swift */,
+				DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -724,6 +730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDE515F2120FAF100353394 /* PatientTabBarViewController.swift in Sources */,
 				DE53B7982113C6C50015278A /* NetworkConstants.swift in Sources */,
 				DE53B7962113C6B60015278A /* NetworkManager.swift in Sources */,
 				DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */,
@@ -734,7 +741,6 @@
 				DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */,
 				DE62F8DD20ED5BBA001D7BA2 /* ParentViewController.swift in Sources */,
 				DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */,
-				DEE560F520F93EB200E753E4 /* MenuViewController.swift in Sources */,
 				DECFE95A20ED5674006D24A9 /* P3HR.xcdatamodeld in Sources */,
 				DE53B79C2114202E0015278A /* ProfessionalPresentor.swift in Sources */,
 				DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */,
@@ -745,10 +751,10 @@
 				DE385E5C211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift in Sources */,
 				DE62F8C120ED5826001D7BA2 /* Constants.swift in Sources */,
 				DE62F8DB20ED5A4D001D7BA2 /* Style.swift in Sources */,
-				DEE560F920F946A100E753E4 /* ProfessionalMenuViewController.swift in Sources */,
 				DE385E65211A7FF200CFBDA0 /* Profile.swift in Sources */,
 				DE62F8C920ED58B7001D7BA2 /* P3HRButton.swift in Sources */,
 				DE62F8D320ED5923001D7BA2 /* ActivityIndicatorManager.swift in Sources */,
+				DEDE5165212100EC00353394 /* PatientNewRecordViewController.swift in Sources */,
 				DE62F8C520ED5880001D7BA2 /* P3HRTextField.swift in Sources */,
 				DE8998982114E86E00FB74B5 /* BaseModel.swift in Sources */,
 				DE62F8DA20ED5A4D001D7BA2 /* TableViewHelper.swift in Sources */,
@@ -756,11 +762,13 @@
 				DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */,
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
+				DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */,
 				DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */,
 				DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */,
 				DEE560F720F9468800E753E4 /* ProfessionalHomeScreen.swift in Sources */,
 				DE62F8D220ED5923001D7BA2 /* AlertManager.swift in Sources */,
 				DE62F8C320ED5866001D7BA2 /* P3HRLabel.swift in Sources */,
+				DEDE51632120FB5500353394 /* PatientRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -945,7 +953,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -961,7 +972,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4L8MWY7R8;
 				INFOPLIST_FILE = P3HR/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -977,7 +991,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -994,7 +1012,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1010,7 +1032,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1026,7 +1052,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = P3HRUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uWindsor.P3HRUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

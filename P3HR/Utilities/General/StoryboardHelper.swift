@@ -12,15 +12,15 @@ extension UIStoryboard {
     enum StoryboardIdentifiers : String {
         case registeration = "RegistrationVC"
         case menu = "menuVC"
+        
         case professionalMenu = "professionalMenuVC"
         case professionalProfile = "professionalProfileUpdateVC"
         
+        case patientHome = "patientHomeVC"
+        case patientRecord = "patientRecordVC"
+        case patientProfile = "patientProfileVC"
+        case patientNewRecord = "patientNewRecordVC"
         
-        
-        case dashboardTabVC = "dashboardTabBar"
-        case dashboard = "dash"
-        case quizVC = "quizVC"
-        case lorealPersonlListVC = "lorealPersonalListVC"
     }
     
     // LoginStoryboard
