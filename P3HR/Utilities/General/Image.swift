@@ -11,6 +11,8 @@ import UIKit
 public enum Key : String {
     
     case dropDown = "dropDown"
+    case attachment = "attachment"
+    case done = "done"
     
 }
 

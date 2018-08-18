@@ -30,7 +30,7 @@ class AuthPresentor {
     
     private weak var delegate : AuthDelegate!
     
-    private func handleAuth (response : AuthModel? , error : Error?, completion : ((String?, Error?) -> ())) {
+    private func handleAuth (response : AuthModel? , error : Error?, completion : ((AuthModel?, Error?) -> ())) {
         self.delegate.hideActivityIndicator()
         if let error = error {
             completion (nil, error)
@@ -39,7 +39,7 @@ class AuthPresentor {
             if let token = result.token, let id = result.id {
                 UserDefaults.standard.set(token, forKey: "x-auth")
                 UserDefaults.standard.set(id, forKey: "profileID")
-                completion (result.type, nil)
+                completion (result, nil)
             }
             else {
                 let message = ErrorMessage.UNKNOWN_ERROR.message
@@ -56,7 +56,7 @@ class AuthPresentor {
         }
     }
     
-    func login (withEmail email : String, password : String, completion : @escaping (String?, Error?) -> ()) {
+    func login (withEmail email : String, password : String, completion : @escaping (AuthModel?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email
@@ -66,7 +66,7 @@ class AuthPresentor {
         }
     }
     
-    func register (withEmail email : String, password : String,type : String , firstName : String, secondName : String, completion : @escaping (String?, Error?) -> ()) {
+    func register (withEmail email : String, password : String,type : String , firstName : String, secondName : String, completion : @escaping (AuthModel?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email

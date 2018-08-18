@@ -28,16 +28,25 @@ class LoginViewController: ParentViewController, AuthDelegate {
        
         loginButton.touchUpInside() { [unowned self] in
             if let email = self.emailTextfield.text, let password = self.passwordTextfield.text {
-                self.authPresentor.login(withEmail: email, password: password, completion: { (type, error) in
+                self.authPresentor.login(withEmail: email, password: password, completion: { (user, error) in
                     if let error = error {
                         AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
                     }
                     else {
-                        if type! == "Patient" {
+                        if user!.type! == "Patient" {
                             self.presetStroryboard(storyboard: UIStoryboard.patientStoryboard())
                         }
                         else {
-                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                            
+                            if user!.isVerified == "True" {
+                                self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                            }
+                            else {
+                                AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.USER_VERIFICATION_ERROR.message, cancelButtonTitle: "Ok", destructiveButtonTitle: nil, otherButtonTitles: nil, completion: nil, cancelCompletion: {
+                                    
+                                })
+                            }
+                            
                         }
                     }
                 })

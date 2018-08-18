@@ -34,7 +34,7 @@ class P3HRTextField: JVFloatLabeledTextField {
 //        self.layer.masksToBounds = true
         
         self.borderStyle = .none
-        self.layer.backgroundColor = UIColor.white.cgColor
+        //self.layer.backgroundColor = UIColor.white.cgColor
         
         self.layer.masksToBounds = false
         self.layer.shadowColor = UIColor.gray.cgColor

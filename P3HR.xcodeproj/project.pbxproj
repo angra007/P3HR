@@ -54,6 +54,12 @@
 		DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51602120FB4400353394 /* PatientProfileViewController.swift */; };
 		DEDE51632120FB5500353394 /* PatientRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51622120FB5500353394 /* PatientRecordViewController.swift */; };
 		DEDE5165212100EC00353394 /* PatientNewRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */; };
+		DEDE51672121584B00353394 /* PatientPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51662121584B00353394 /* PatientPresentor.swift */; };
+		DEDE516B2121649800353394 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51692121649800353394 /* RecordTableViewCell.swift */; };
+		DEDE516C2121649800353394 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDE516A2121649800353394 /* RecordTableViewCell.xib */; };
+		DEDE516E2121680000353394 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE516D2121680000353394 /* Record.swift */; };
+		DEDE51702121D54800353394 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE516F2121D54800353394 /* Patient.swift */; };
+		DEDE51722121E29500353394 /* PatientEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE51712121E29500353394 /* PatientEditProfileViewController.swift */; };
 		DEE560E820F91DC600E753E4 /* EnglishLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEE560EA20F91DC600E753E4 /* EnglishLocalizable.strings */; };
 		DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */; };
 		DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */; };
@@ -137,6 +143,12 @@
 		DEDE51602120FB4400353394 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
 		DEDE51622120FB5500353394 /* PatientRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordViewController.swift; sourceTree = "<group>"; };
 		DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNewRecordViewController.swift; sourceTree = "<group>"; };
+		DEDE51662121584B00353394 /* PatientPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientPresentor.swift; sourceTree = "<group>"; };
+		DEDE51692121649800353394 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		DEDE516A2121649800353394 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
+		DEDE516D2121680000353394 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		DEDE516F2121D54800353394 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		DEDE51712121E29500353394 /* PatientEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientEditProfileViewController.swift; sourceTree = "<group>"; };
 		DEE560E920F91DC600E753E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EnglishLocalizable.strings; sourceTree = "<group>"; };
 		DEE560EB20F91E9400E753E4 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		DEE560ED20F9324100E753E4 /* PatientHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeViewController.swift; sourceTree = "<group>"; };
@@ -381,6 +393,7 @@
 				DEDE51602120FB4400353394 /* PatientProfileViewController.swift */,
 				DEDE51622120FB5500353394 /* PatientRecordViewController.swift */,
 				DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */,
+				DEDE51712121E29500353394 /* PatientEditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -388,6 +401,7 @@
 		DE62F8ED20ED5C84001D7BA2 /* Presentor */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE51662121584B00353394 /* PatientPresentor.swift */,
 			);
 			path = Presentor;
 			sourceTree = "<group>";
@@ -395,6 +409,8 @@
 		DE62F8EE20ED5C8A001D7BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE516D2121680000353394 /* Record.swift */,
+				DEDE516F2121D54800353394 /* Patient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -493,9 +509,19 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		DEDE51682121647500353394 /* RecordCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE51692121649800353394 /* RecordTableViewCell.swift */,
+				DEDE516A2121649800353394 /* RecordTableViewCell.xib */,
+			);
+			path = RecordCell;
+			sourceTree = "<group>";
+		};
 		DEE560EF20F9344400E753E4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE51682121647500353394 /* RecordCell */,
 				DEE560F020F9355600E753E4 /* PaitentHomeCellTableViewCell.swift */,
 				DEE560F120F9355600E753E4 /* PaitentHomeCellTableViewCell.xib */,
 			);
@@ -618,6 +644,7 @@
 				DEE560F320F9355600E753E4 /* PaitentHomeCellTableViewCell.xib in Resources */,
 				DECFE95C20ED5676006D24A9 /* Assets.xcassets in Resources */,
 				DECFE95720ED5674006D24A9 /* Main.storyboard in Resources */,
+				DEDE516C2121649800353394 /* RecordTableViewCell.xib in Resources */,
 				DE62F8F320ED5CBE001D7BA2 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,14 +764,18 @@
 				DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */,
 				DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */,
 				DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */,
+				DEDE51702121D54800353394 /* Patient.swift in Sources */,
 				DE385E58211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift in Sources */,
+				DEDE51672121584B00353394 /* PatientPresentor.swift in Sources */,
 				DED276E620F2D46200A870FC /* RegistrationViewController.swift in Sources */,
 				DE62F8DD20ED5BBA001D7BA2 /* ParentViewController.swift in Sources */,
+				DEDE51722121E29500353394 /* PatientEditProfileViewController.swift in Sources */,
 				DE62F8C020ED5826001D7BA2 /* StringHelper.swift in Sources */,
 				DECFE95A20ED5674006D24A9 /* P3HR.xcdatamodeld in Sources */,
 				DE53B79C2114202E0015278A /* ProfessionalPresentor.swift in Sources */,
 				DE62F8BE20ED5826001D7BA2 /* Image.swift in Sources */,
 				DECFE95420ED5674006D24A9 /* ViewController.swift in Sources */,
+				DEDE516B2121649800353394 /* RecordTableViewCell.swift in Sources */,
 				DE53B79E211422640015278A /* DefaultConfiguration.swift in Sources */,
 				DEE560EE20F9324100E753E4 /* PatientHomeViewController.swift in Sources */,
 				DE385E63211A689400CFBDA0 /* AuthModel.swift in Sources */,
@@ -760,6 +791,7 @@
 				DE62F8DA20ED5A4D001D7BA2 /* TableViewHelper.swift in Sources */,
 				DE62F8D820ED5A4D001D7BA2 /* UIView.swift in Sources */,
 				DE53B79A2113C9EC0015278A /* AuthPresentor.swift in Sources */,
+				DEDE516E2121680000353394 /* Record.swift in Sources */,
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
 				DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */,

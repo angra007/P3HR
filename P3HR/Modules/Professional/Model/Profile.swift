@@ -8,13 +8,22 @@
 
 import Foundation
 
-class Profile : Root {
+class Professional : Root {
     var name : String?
     var email : String?
-    var user : ProfessionalUser?
+    var user : ProfessionalProfile?
 }
 
-class ProfessionalUser : BaseModel {
+class ProfessionalProfile : BaseModel {
     var province : String?
     var city : String?
+    var organization : String?
+    var department : String?
+    var healthProfessional : String?
+    var status : Int = 0
+    var firstName : String?
+    var lastName : String?
+    var email : String?
+    var imageURL : String?
+    var phoneNumber : Int = 0
 }

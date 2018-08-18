@@ -16,6 +16,11 @@ enum ErrorMessage {
     case REGISTRATION_PASSWORD_ERROR
     case REGISTRATION_CONFIRM_PASSWORD_ERROR
     case UNKNOWN_ERROR
+    case RECORD_NAME_ERROR
+    case RECORD_DESCRIPTION_ERROR
+    case RECORD_ATTACHMENT_ERROR
+    
+    case USER_VERIFICATION_ERROR
     
     var message : String {
         switch self {
@@ -27,6 +32,14 @@ enum ErrorMessage {
             return "Please enter your passowrd."
         case .REGISTRATION_CONFIRM_PASSWORD_ERROR:
             return "Password donot match."
+        case .RECORD_NAME_ERROR:
+            return "Please enter name of record"
+        case .RECORD_DESCRIPTION_ERROR:
+            return "Please enter description of record"
+        case .RECORD_ATTACHMENT_ERROR:
+            return "Please selecte an attachment for the record"
+        case .USER_VERIFICATION_ERROR:
+            return "Your a not verified yet. Please contact your orgaization"
         case .UNKNOWN_ERROR:
             return "Unknown Error"
         }

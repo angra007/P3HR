@@ -8,7 +8,10 @@
 
 import UIKit
 
-class RecordTableViewCell: UITableViewCell {
+class RecordTableViewCell: UITableViewCell, NibLoadableView {
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

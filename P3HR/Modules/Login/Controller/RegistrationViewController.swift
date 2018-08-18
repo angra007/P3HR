@@ -126,7 +126,7 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
                     type = "HealthProfessional"
                 }
                 
-                self.authPresentor.register(withEmail: self.email , password: self.password, type: type, firstName: self.firstName, secondName: self.secondName,completion: { (type, error) in
+                self.authPresentor.register(withEmail: self.email , password: self.password, type: type, firstName: self.firstName, secondName: self.secondName,completion: { (user, error) in
                     if let error = error {
                         AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
                     }
@@ -135,7 +135,9 @@ class RegistrationViewController: ParentViewController, AuthDelegate {
                             self.presetStroryboard(storyboard: UIStoryboard.patientStoryboard())
                         }
                         else {
-                            self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
+                            AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.USER_VERIFICATION_ERROR.message, cancelButtonTitle: "Ok", destructiveButtonTitle: nil, otherButtonTitles: nil, completion: nil, cancelCompletion: {
+                                
+                            })
                         }
                     }
                 })

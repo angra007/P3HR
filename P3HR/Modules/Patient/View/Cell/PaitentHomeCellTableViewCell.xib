@@ -45,6 +45,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="eof-e7-JKx" secondAttribute="bottom" id="4Ea-5e-w72"/>
                     <constraint firstItem="eof-e7-JKx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9ws-lW-VlL"/>
@@ -52,6 +53,7 @@
                     <constraint firstAttribute="trailing" secondItem="eof-e7-JKx" secondAttribute="trailing" constant="8" id="oWy-fR-JEm"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="34" y="82.5"/>
         </tableViewCell>

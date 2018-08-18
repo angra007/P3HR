@@ -8,6 +8,16 @@
 
 import UIKit
 
-class Record: Root {
+class Records : Root {
+    var records = [Record] ()
+}
 
+class Record: BaseModel {
+    var name : String?
+    var desc : String?
+    var recordUrl : String?
+}
+
+class Attachment : Root {
+    var path : String?
 }

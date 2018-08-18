@@ -37,6 +37,10 @@ class ParentViewController: UIViewController {
         self.present(vc!, animated: true, completion: nil)
     }
 
+    func showError (withMessage message : String) {
+        AlertManager.showAlert(inViewController: self, withTitle: "", message: message)
+    }
+    
     /*
     // MARK: - Navigation
 

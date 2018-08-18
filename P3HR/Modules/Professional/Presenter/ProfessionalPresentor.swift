@@ -37,10 +37,10 @@ class ProfessionalPresentor {
         }
     }
     
-    func getProfile (completion : @escaping (Profile?, Error?) -> ()) {
+    func getProfile (completion : @escaping (Professional?, Error?) -> ()) {
         let profileID = UserDefaults.standard.string(forKey: "profileID")!
         let url = RequestType.profile.url + "/" + profileID
-        NetworkManager<Profile>.get(forURL: url) { (response, error) in
+        NetworkManager<Professional>.get(forURL: url) { (response, error) in
             completion (response, error)
         }
     }

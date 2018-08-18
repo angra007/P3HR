@@ -8,7 +8,7 @@
 
 import UIKit
 
-class P3HRTextView: UITextField {
+class P3HRTextView: UITextView {
 
     /*
     // Only override draw() if you perform custom drawing.

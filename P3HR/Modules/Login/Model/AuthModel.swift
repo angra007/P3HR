@@ -12,4 +12,5 @@ class AuthModel : Root {
     var id : String?
     var token : String?
     var type : String?
+    var isVerified : String?
 }

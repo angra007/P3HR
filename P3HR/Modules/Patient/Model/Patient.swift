@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Patient : Root {
+    var email : String?
+    var user : PatientProfile?
+}
+
+class PatientProfile : BaseModel {
+    var province : String?
+    var city : String?
+    var firstName : String?
+    var lastName : String?
+    var email : String?
+}

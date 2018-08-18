@@ -15,6 +15,8 @@ enum RequestType {
     case registeration
     case defaults
     case profile
+    case record
+    case recordAttachment
 
     var url : String {
         switch self {
@@ -26,6 +28,10 @@ enum RequestType {
             return BASE_URL + "defaults"
         case .profile:
             return BASE_URL + "profile"
+        case .record:
+            return BASE_URL + "record"
+        case .recordAttachment:
+            return BASE_URL + "recordAttachment"
         }
     }
 }

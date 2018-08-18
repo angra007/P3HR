@@ -23,12 +23,7 @@ class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelega
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        profilePresentor = ProfessionalPresentor.init(withDelegate: self)
-        
-        
+    fileprivate func continueExecution () {
         profilePresentor.getDefaults { [unowned self] (defaults, error) in
             if let error = error {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
@@ -40,12 +35,24 @@ class ProfessionalHomeScreen: ParentViewController , ProfessionalPresentorDelega
                 self.present(vc, animated: true, completion: nil)
             }
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        profilePresentor.getProfile { (profile, error) in
+        profilePresentor = ProfessionalPresentor.init(withDelegate: self)
+        
+        profilePresentor.getProfile { [unowned self] (profile, error) in
             if let error = error {
                 AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
             }
+            else if let profile = profile, profile.user?.status == 0 {
+                AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.USER_VERIFICATION_ERROR.message, cancelButtonTitle: "Ok", destructiveButtonTitle: nil, otherButtonTitles: nil, completion: nil, cancelCompletion: {
+                    
+                })
+            }
             else {
+                self.continueExecution ()
             }
         }
     }

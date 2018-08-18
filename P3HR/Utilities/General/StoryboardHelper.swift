@@ -20,6 +20,7 @@ extension UIStoryboard {
         case patientRecord = "patientRecordVC"
         case patientProfile = "patientProfileVC"
         case patientNewRecord = "patientNewRecordVC"
+        case patientEditProfile = "patientEditProfile"
         
     }
     
