@@ -44,5 +44,48 @@ class ProfessionalPresentor {
             completion (response, error)
         }
     }
-
+    
+    func verifyCode (_ code : String, completion : @escaping (Bool?, Error?) -> ()) {
+        let profileID = UserDefaults.standard.string(forKey: "profileID")!
+        var data = [String: AnyObject] ()
+        data ["otp"] = code as AnyObject
+        data ["id"] = profileID as AnyObject
+        self.delegate.showActivityIndicator()
+        NetworkManager<Code>.post(forRequest: .verifyCode, withData: data) { [unowned self] (code, error) in
+            self.delegate.hideActivityIndicator()
+            if let error = error {
+                completion (nil, error)
+            }
+            else {
+                if code?.message == "User Verified" {
+                    completion (true, nil)
+                }
+                else {
+                    completion (false, nil)
+                }
+            }
+        }
+    }
+    
+    func resendCode (completion : @escaping (Bool?, Error?) -> ()) {
+        let profileID = UserDefaults.standard.string(forKey: "profileID")!
+        let url = RequestType.resendCode.url + "/" + profileID
+        
+        self.delegate.showActivityIndicator()
+        NetworkManager<Code>.get(forURL: url) { [unowned self](code, error) in
+            self.delegate.hideActivityIndicator()
+            if let error = error {
+                completion (nil, error)
+            }
+            else {
+                if code?.message == "Email Sen" {
+                    completion (true, nil)
+                }
+                else {
+                    completion (false, nil)
+                }
+            }
+        }
+    }
+    
 }

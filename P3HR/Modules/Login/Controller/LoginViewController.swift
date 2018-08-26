@@ -42,9 +42,7 @@ class LoginViewController: ParentViewController, AuthDelegate {
                                 self.presetStroryboard(storyboard: UIStoryboard.professionalStoryboard())
                             }
                             else {
-                                AlertManager.showAlert(inViewController: self, withTitle: "", message: ErrorMessage.USER_VERIFICATION_ERROR.message, cancelButtonTitle: "Ok", destructiveButtonTitle: nil, otherButtonTitles: nil, completion: nil, cancelCompletion: {
-                                    
-                                })
+                                self.push(withIdentifier: .professionalCodeVerification, fromStoryboard: UIStoryboard.loginStoryboard())
                             }
                             
                         }

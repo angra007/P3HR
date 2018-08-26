@@ -19,7 +19,7 @@ enum ErrorMessage {
     case RECORD_NAME_ERROR
     case RECORD_DESCRIPTION_ERROR
     case RECORD_ATTACHMENT_ERROR
-    
+    case CODE_SENT_VERIFICATION
     case USER_VERIFICATION_ERROR
     
     var message : String {
@@ -40,6 +40,8 @@ enum ErrorMessage {
             return "Please selecte an attachment for the record"
         case .USER_VERIFICATION_ERROR:
             return "Your a not verified yet. Please contact your orgaization"
+        case .CODE_SENT_VERIFICATION:
+            return "A verification code is sent to your registered email id"
         case .UNKNOWN_ERROR:
             return "Unknown Error"
         }

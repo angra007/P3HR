@@ -17,6 +17,8 @@ enum RequestType {
     case profile
     case record
     case recordAttachment
+    case verifyCode
+    case resendCode
 
     var url : String {
         switch self {
@@ -32,6 +34,10 @@ enum RequestType {
             return BASE_URL + "record"
         case .recordAttachment:
             return BASE_URL + "recordAttachment"
+        case .verifyCode:
+            return BASE_URL + "auth/verifyOtp"
+        case .resendCode:
+            return BASE_URL + "auth/resendOtp"
         }
     }
 }

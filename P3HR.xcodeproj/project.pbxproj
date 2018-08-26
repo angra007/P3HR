@@ -38,6 +38,8 @@
 		DE62F8F320ED5CBE001D7BA2 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */; };
 		DE62F8F520ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */; };
 		DE62F8F720ED5CDD001D7BA2 /* PatientStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */; };
+		DE6B05122130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B05112130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift */; };
+		DE6B05142130F30A00030D45 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B05132130F30A00030D45 /* Code.swift */; };
 		DE8998982114E86E00FB74B5 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8998972114E86E00FB74B5 /* BaseModel.swift */; };
 		DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECF313220F2B5F300BD2683 /* LoginViewController.swift */; };
 		DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFE95120ED5674006D24A9 /* AppDelegate.swift */; };
@@ -121,6 +123,8 @@
 		DE62F8F220ED5CBE001D7BA2 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		DE62F8F420ED5CD1001D7BA2 /* ProfessionalStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfessionalStoryboard.storyboard; sourceTree = "<group>"; };
 		DE62F8F620ED5CDD001D7BA2 /* PatientStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientStoryboard.storyboard; sourceTree = "<group>"; };
+		DE6B05112130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalCodeVerificaiationViewController.swift; sourceTree = "<group>"; };
+		DE6B05132130F30A00030D45 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		DE8998972114E86E00FB74B5 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		DECF313220F2B5F300BD2683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DECFE94E20ED5674006D24A9 /* P3HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P3HR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				DECF313220F2B5F300BD2683 /* LoginViewController.swift */,
+				DE6B05112130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift */,
 				DED276E520F2D46200A870FC /* RegistrationViewController.swift */,
 			);
 			path = Controller;
@@ -364,6 +369,7 @@
 			children = (
 				DE53B79D211422640015278A /* DefaultConfiguration.swift */,
 				DE385E64211A7FF200CFBDA0 /* Profile.swift */,
+				DE6B05132130F30A00030D45 /* Code.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -761,6 +767,7 @@
 				DE53B7982113C6C50015278A /* NetworkConstants.swift in Sources */,
 				DE53B7962113C6B60015278A /* NetworkManager.swift in Sources */,
 				DECF313320F2B5F300BD2683 /* LoginViewController.swift in Sources */,
+				DE6B05142130F30A00030D45 /* Code.swift in Sources */,
 				DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */,
 				DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */,
 				DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */,
@@ -794,6 +801,7 @@
 				DEDE516E2121680000353394 /* Record.swift in Sources */,
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
+				DE6B05122130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift in Sources */,
 				DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */,
 				DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */,
 				DECFE95220ED5674006D24A9 /* AppDelegate.swift in Sources */,
