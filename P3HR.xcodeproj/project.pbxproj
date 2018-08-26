@@ -10,6 +10,8 @@
 		3E24F90640AC14FB4E3C5958 /* Pods_P3HRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241BA549CC45C3829721BBCE /* Pods_P3HRUITests.framework */; };
 		88843DA0DF6873AD8373FBBB /* Pods_P3HR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A48DE3A87559891F708C52B /* Pods_P3HR.framework */; };
 		ABB4A76CB426D964D6842F3F /* Pods_P3HRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */; };
+		DE2439F5213319F000381F33 /* PatientAttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2439F4213319F000381F33 /* PatientAttachmentViewController.swift */; };
+		DE2439F7213360C600381F33 /* PatientEditPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2439F6213360C600381F33 /* PatientEditPermissionViewController.swift */; };
 		DE385E58211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */; };
 		DE385E5C211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE385E5A211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift */; };
 		DE385E5D211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */; };
@@ -95,6 +97,8 @@
 		957EBDF8A43BFF7B9AFFF7FE /* Pods_P3HRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P3HRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCDC15411E9DD7B9B1136E8 /* Pods-P3HRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRTests/Pods-P3HRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8791EF9BD56C738D7431386 /* Pods-P3HRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P3HRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-P3HRUITests/Pods-P3HRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE2439F4213319F000381F33 /* PatientAttachmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAttachmentViewController.swift; sourceTree = "<group>"; };
+		DE2439F6213360C600381F33 /* PatientEditPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientEditPermissionViewController.swift; sourceTree = "<group>"; };
 		DE385E57211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalProfileUpdateViewController.swift; sourceTree = "<group>"; };
 		DE385E5A211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileUpdateDropDownTableViewCell.swift; path = ProfileUpdateDropDown/ProfileUpdateDropDownTableViewCell.swift; sourceTree = "<group>"; };
 		DE385E5B211A473D00CFBDA0 /* ProfileUpdateDropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileUpdateDropDownTableViewCell.xib; path = ProfileUpdateDropDown/ProfileUpdateDropDownTableViewCell.xib; sourceTree = "<group>"; };
@@ -400,6 +404,8 @@
 				DEDE51622120FB5500353394 /* PatientRecordViewController.swift */,
 				DEDE5164212100EC00353394 /* PatientNewRecordViewController.swift */,
 				DEDE51712121E29500353394 /* PatientEditProfileViewController.swift */,
+				DE2439F4213319F000381F33 /* PatientAttachmentViewController.swift */,
+				DE2439F6213360C600381F33 /* PatientEditPermissionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -770,6 +776,7 @@
 				DE6B05142130F30A00030D45 /* Code.swift in Sources */,
 				DEE560F220F9355600E753E4 /* PaitentHomeCellTableViewCell.swift in Sources */,
 				DEE560EC20F91E9400E753E4 /* ErrorMessage.swift in Sources */,
+				DE2439F7213360C600381F33 /* PatientEditPermissionViewController.swift in Sources */,
 				DE62F8C720ED5890001D7BA2 /* P3HRTextView.swift in Sources */,
 				DEDE51702121D54800353394 /* Patient.swift in Sources */,
 				DE385E58211A3FF600CFBDA0 /* ProfessionalProfileUpdateViewController.swift in Sources */,
@@ -801,6 +808,7 @@
 				DEDE516E2121680000353394 /* Record.swift in Sources */,
 				DED276E820F2D56C00A870FC /* P3HRUtilities.swift in Sources */,
 				DE62F8BF20ED5826001D7BA2 /* StoryboardHelper.swift in Sources */,
+				DE2439F5213319F000381F33 /* PatientAttachmentViewController.swift in Sources */,
 				DE6B05122130F1AE00030D45 /* ProfessionalCodeVerificaiationViewController.swift in Sources */,
 				DEDE51612120FB4400353394 /* PatientProfileViewController.swift in Sources */,
 				DE385E61211A47ED00CFBDA0 /* P3HRDropDownTextField.swift in Sources */,

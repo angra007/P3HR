@@ -125,42 +125,28 @@ class NetworkManager <T : BaseModel> {
         })
     }
     
-    //    class func upload(data: Data, completion: @escaping (Any?, Error?) -> Void) {
-    //        guard let data = UIImageJPEGRepresentation(image, 0.9) else {
-    //            return
-    //        }
-    //
-    //        let url = RequestType.profileUpload.url
-    //
-    //        Alamofire.upload(multipartFormData: { (form) in
-    //            form.append(data, withName: "file", fileName: "file.jpg", mimeType: "image/jpg")
-    //        }, to: url, encodingCompletion: { result in
-    //            switch result {
-    //            case .success(let upload, _, _):
-    //                upload.responseString { response in
-    //                    completion (response.value, nil)
-    //                }
-    //            case .failure(let encodingError):
-    //                completion (nil,encodingError)
-    //            }
-    //        })
-    //    }
-    //
-    //    class func uploadAudio (audioData : Data, audioNumber : Int, completion: @escaping (Any?, Error?) -> Void) {
-    //        let url = RequestType.audio.url + "/chat-" + String (audioNumber) + "?messageType=AUDIO"
-    //        Alamofire.upload(multipartFormData: { (form) in
-    //            form.append(audioData, withName: "file", fileName: "record.m4a", mimeType: "audio/m4a")
-    //        }, to: url, encodingCompletion: { result in
-    //            switch result {
-    //            case .success(let upload, _, _):
-    //                upload.responseString { response in
-    //                    completion (response.value, nil)
-    //                }
-    //            case .failure(let encodingError):
-    //                completion (nil,encodingError)
-    //            }
-    //        })
-    //    }
-    //
-    
+    class func download (forURL url : String, completion:  @escaping (URL?,Error?) -> Void) {
+        
+        var headers = [String: String]()
+        let token = UserDefaults.standard.string(forKey: "x-auth")
+        headers ["x-auth"] = token
+        
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+            let documentsURL:NSURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as NSURL
+            let PDF_name = NSString(string: url).lastPathComponent
+            let fileURL = documentsURL.appendingPathComponent(PDF_name)
+            
+            return (fileURL!,[.removePreviousFile, .createIntermediateDirectories])
+        }
+        
+        Alamofire.download(url, headers : headers, to: destination).downloadProgress(closure: { (prog) in }).response { response in
+            if let error = response.error {
+                return completion(nil, error as NSError)
+            }
+            if response.error == nil, let filePath = response.destinationURL?.path {
+                let fileURL = URL(fileURLWithPath: filePath)
+                completion(fileURL, nil)
+            }
+        }
+    }
 }

@@ -22,6 +22,8 @@ extension UIStoryboard {
         case patientProfile = "patientProfileVC"
         case patientNewRecord = "patientNewRecordVC"
         case patientEditProfile = "patientEditProfile"
+        case patientAttachment = "patientAttachmentVC"
+        case patientEditPermission = "editPermissionVC"
         
     }
     

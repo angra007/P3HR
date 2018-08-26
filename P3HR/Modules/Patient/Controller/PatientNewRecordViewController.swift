@@ -9,8 +9,19 @@
 import UIKit
 import MobileCoreServices
 
+enum PatientRecordNavigationType {
+    case newRecord
+    case viewRecord
+}
 
 class PatientNewRecordViewController: ParentViewController {
+    
+    
+    var navigationType : PatientRecordNavigationType = .newRecord
+    var record : Record!
+    
+    @IBOutlet weak var editPermissionButton: P3HRButton!
+    @IBOutlet weak var viewAttachmentButton: P3HRButton!
     @IBOutlet weak var attachmentLogo: UIImageView!
     @IBOutlet weak var attachmentLabel: UILabel!
     
@@ -170,6 +181,24 @@ class PatientNewRecordViewController: ParentViewController {
         self.present(picker!, animated: true, completion: nil)
     }
     
+    
+    private func registerForEvents () {
+        viewAttachmentButton.touchUpInside() { [unowned self] in
+            if self.navigationType == .viewRecord {
+                let attachmentVC = UIStoryboard.patientStoryboard().instantiateViewController(withIdentifier: UIStoryboard.StoryboardIdentifiers.patientAttachment.rawValue) as! PatientAttachmentViewController
+                attachmentVC.url = self.attachmentURL
+                self.navigationController?.pushViewController(attachmentVC, animated: true)
+            }
+        }
+        
+        editPermissionButton.touchUpInside() { [unowned self] in
+            if self.navigationType == .viewRecord {
+                let attachmentVC = UIStoryboard.patientStoryboard().instantiateViewController(withIdentifier: UIStoryboard.StoryboardIdentifiers.patientEditPermission.rawValue)
+                self.navigationController?.pushViewController(attachmentVC, animated: true)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -180,7 +209,30 @@ class PatientNewRecordViewController: ParentViewController {
         }
         customizeNavigationBar ()
         patientPresentor.delegate = self
+        
+        registerForEvents ()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if navigationType == .viewRecord {
+            self.nameTextField.text = record.name
+            self.descriptionTextView.text = record.desc
+            let url = RequestType.recordAttachment.url + "/" + record.path!
+            self.attachmentURL = URL.init(string: url)
+            self.nameTextField.isUserInteractionEnabled = false
+            self.descriptionTextView.isUserInteractionEnabled = false
+            self.attachmentLabel.text = "View Attachment"
+            self.nameTextField.textColor = UIColor.lightGray
+            self.descriptionTextView.textColor = UIColor.lightGray
+        }
+        else {
+            editPermissionButton.isHidden = true
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

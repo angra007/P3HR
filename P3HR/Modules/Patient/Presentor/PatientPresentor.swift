@@ -75,9 +75,15 @@ class PatientPresentor {
             else {
                 completion (nil, error)
             }
-            
-            
         }
+    }
+    
+    func download (withURL url : URL, completion:  @escaping (URL?,Error?) -> Void ) {
+        delegate.showActivityIndicator()
+        NetworkManager.download(forURL: url.absoluteString) { [weak self] (downloadedURL, error) in
+            self?.delegate.hideActivityIndicator()
+            completion (downloadedURL, error)
+        }        
     }
     
 }

@@ -15,7 +15,7 @@ class Records : Root {
 class Record: BaseModel {
     var name : String?
     var desc : String?
-    var recordUrl : String?
+    var path : String?
 }
 
 class Attachment : Root {

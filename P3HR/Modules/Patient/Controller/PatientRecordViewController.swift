@@ -91,6 +91,18 @@ extension PatientRecordViewController : UITableViewDelegate, UITableViewDataSour
         let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 8 ))
         return view
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let record = data!.records [indexPath.section]
+        let patientRecordVC = UIStoryboard.patientStoryboard().instantiateViewController(withIdentifier: UIStoryboard.StoryboardIdentifiers.patientNewRecord.rawValue) as! PatientNewRecordViewController
+        patientRecordVC.navigationType = .viewRecord
+        patientRecordVC.record = record
+        self.navigationController?.pushViewController(patientRecordVC, animated: true)
+        
+    }
+    
+    
 }
 
 

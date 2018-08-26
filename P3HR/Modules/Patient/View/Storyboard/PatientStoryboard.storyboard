@@ -124,29 +124,44 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment" translatesAutoresizingMaskIntoConstraints="NO" id="0aR-YS-7zG">
-                                                <rect key="frame" x="8" y="268" width="24" height="24"/>
+                                                <rect key="frame" x="8" y="270" width="24" height="24"/>
                                             </imageView>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Attached" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duG-DS-21X">
-                                                <rect key="frame" x="40" y="270" width="100.5" height="21"/>
+                                                <rect key="frame" x="40" y="272" width="100.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gX-GX-clY" customClass="P3HRButton" customModule="P3HR" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="262" width="132.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Q9h-K4-YrP"/>
+                                                </constraints>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRg-NX-HoN" customClass="P3HRButton" customModule="P3HR" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="267.5" width="106" height="30"/>
+                                                <state key="normal" title="Edit Permission"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="9gX-GX-clY" firstAttribute="trailing" secondItem="duG-DS-21X" secondAttribute="trailing" id="0Dp-cd-zOB"/>
                                             <constraint firstItem="zFI-vL-MbU" firstAttribute="leading" secondItem="Usg-bK-bm3" secondAttribute="leading" id="2CI-NS-Flb"/>
                                             <constraint firstItem="zFI-vL-MbU" firstAttribute="top" secondItem="Usg-bK-bm3" secondAttribute="bottom" constant="8" id="7ZL-yo-lnQ"/>
+                                            <constraint firstItem="9gX-GX-clY" firstAttribute="top" secondItem="rhh-Ta-FHm" secondAttribute="bottom" id="7rR-8p-E8l"/>
                                             <constraint firstItem="duG-DS-21X" firstAttribute="centerY" secondItem="0aR-YS-7zG" secondAttribute="centerY" id="8Lx-b6-naG"/>
                                             <constraint firstAttribute="trailing" secondItem="Usg-bK-bm3" secondAttribute="trailing" constant="8" id="Gpd-ex-Y9L"/>
                                             <constraint firstItem="0aR-YS-7zG" firstAttribute="leading" secondItem="rhh-Ta-FHm" secondAttribute="leading" id="PJs-Rv-bvN"/>
+                                            <constraint firstItem="9gX-GX-clY" firstAttribute="leading" secondItem="bSB-Gf-3rn" secondAttribute="leading" constant="8" id="SSx-cS-SR7"/>
                                             <constraint firstAttribute="trailing" secondItem="Usg-bK-bm3" secondAttribute="trailing" constant="8" id="Tgl-uc-Vpe"/>
                                             <constraint firstItem="duG-DS-21X" firstAttribute="leading" secondItem="0aR-YS-7zG" secondAttribute="trailing" constant="8" id="U6R-ng-8Y7"/>
                                             <constraint firstItem="rhh-Ta-FHm" firstAttribute="trailing" secondItem="Usg-bK-bm3" secondAttribute="trailing" id="W4p-8z-V0y"/>
                                             <constraint firstItem="rhh-Ta-FHm" firstAttribute="leading" secondItem="Usg-bK-bm3" secondAttribute="leading" id="ZLE-nR-HTF"/>
+                                            <constraint firstItem="iRg-NX-HoN" firstAttribute="centerY" secondItem="duG-DS-21X" secondAttribute="centerY" id="Zso-OL-JDA"/>
                                             <constraint firstItem="CsR-Ug-SAt" firstAttribute="top" secondItem="bSB-Gf-3rn" secondAttribute="top" constant="16" id="asf-al-vUz"/>
                                             <constraint firstItem="rhh-Ta-FHm" firstAttribute="leading" secondItem="zFI-vL-MbU" secondAttribute="leading" id="b2r-7g-mFm"/>
-                                            <constraint firstItem="0aR-YS-7zG" firstAttribute="top" secondItem="rhh-Ta-FHm" secondAttribute="bottom" constant="6" id="g7g-XM-ulK"/>
+                                            <constraint firstAttribute="trailing" secondItem="iRg-NX-HoN" secondAttribute="trailing" constant="8" id="cvW-h2-Hix"/>
+                                            <constraint firstItem="0aR-YS-7zG" firstAttribute="top" secondItem="rhh-Ta-FHm" secondAttribute="bottom" constant="8" id="g7g-XM-ulK"/>
                                             <constraint firstItem="Usg-bK-bm3" firstAttribute="leading" secondItem="CsR-Ug-SAt" secondAttribute="leading" id="h98-pd-UnS"/>
                                             <constraint firstItem="rhh-Ta-FHm" firstAttribute="top" secondItem="zFI-vL-MbU" secondAttribute="bottom" constant="2" id="i0g-o3-cc9"/>
                                             <constraint firstItem="Usg-bK-bm3" firstAttribute="leading" secondItem="bSB-Gf-3rn" secondAttribute="leading" constant="8" id="ksM-Wd-x0O"/>
@@ -178,12 +193,59 @@
                         <outlet property="attachmentLabel" destination="duG-DS-21X" id="HIi-3L-Ax3"/>
                         <outlet property="attachmentLogo" destination="0aR-YS-7zG" id="zmu-ld-SId"/>
                         <outlet property="descriptionTextView" destination="rhh-Ta-FHm" id="iHt-2M-KjI"/>
+                        <outlet property="editPermissionButton" destination="iRg-NX-HoN" id="rpl-Su-sQk"/>
                         <outlet property="nameTextField" destination="Usg-bK-bm3" id="3lk-dv-wWT"/>
+                        <outlet property="viewAttachmentButton" destination="9gX-GX-clY" id="F53-Wv-nZt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOh-tZ-SHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288.80000000000001" y="261.31934032983509"/>
+        </scene>
+        <!--Patient Attachment View Controller-->
+        <scene sceneID="OUZ-ha-OQF">
+            <objects>
+                <viewController storyboardIdentifier="patientAttachmentVC" id="kAl-ps-Y7E" customClass="PatientAttachmentViewController" customModule="P3HR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLz-Ot-ocW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-aO-qDD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gvx-FB-kfE" firstAttribute="trailing" secondItem="SsM-aO-qDD" secondAttribute="trailing" id="QQh-ol-0EH"/>
+                            <constraint firstItem="SsM-aO-qDD" firstAttribute="top" secondItem="gvx-FB-kfE" secondAttribute="top" id="Tmd-9f-6kB"/>
+                            <constraint firstItem="gvx-FB-kfE" firstAttribute="bottom" secondItem="SsM-aO-qDD" secondAttribute="bottom" id="ewz-4d-bfv"/>
+                            <constraint firstItem="SsM-aO-qDD" firstAttribute="leading" secondItem="gvx-FB-kfE" secondAttribute="leading" id="jnF-eo-94h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gvx-FB-kfE"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="SsM-aO-qDD" id="S8j-FE-IB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fK-Nr-J8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="262"/>
+        </scene>
+        <!--Patient Edit Permission View Controller-->
+        <scene sceneID="sLd-LL-XO6">
+            <objects>
+                <viewController storyboardIdentifier="editPermissionVC" id="Q9c-l4-MHk" customClass="PatientEditPermissionViewController" customModule="P3HR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCD-I9-7eu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nlH-h4-rgD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPw-ty-G1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="255"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Imf-Km-FFy">
