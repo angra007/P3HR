@@ -86,4 +86,21 @@ class PatientPresentor {
         }        
     }
     
+    func uploadProfileImage (withURL url : URL, completion : @escaping (Attachment?, Error?) -> ()) {
+        delegate.showActivityIndicator()
+        NetworkManager<Attachment>.upload(forRequest: .profileImage, withURL: url) { (response, errror) in
+            completion (response, errror)
+        }
+    }
+    
+    func updateProfile (withDict dict : [String : String], completed : @escaping (Patient?, Error?) -> ()) {
+        delegate.showActivityIndicator()
+        
+        NetworkManager<Patient>.patch(forRequest: .profile, withData: dict as [String : AnyObject]) { [weak self] (patient, error) in
+            self?.delegate.hideActivityIndicator()
+            completed (patient, error)
+        }
+        
+    }
+    
 }

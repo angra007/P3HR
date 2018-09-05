@@ -91,13 +91,26 @@ class NetworkManager <T : BaseModel> {
         }
     }
     
-    class func put (forURL url : String, withData data : [String : AnyObject], completion:  @escaping (Any?,Error?) -> Void) {
+    class func patch (forRequest request : RequestType, withData data : [String : AnyObject], completion:  @escaping (T?,Error?) -> Void) {
+        let url = request.url
         
         var headers = [String: String]()
         let token = UserDefaults.standard.string(forKey: "x-auth")
         headers ["x-auth"] = token
         
-        Alamofire.request(url, method: .post, parameters: data, encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
+        Alamofire.request(url, method: .patch, parameters: data, encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
+            let result  = handleResponse (response: response)
+            completion (result.0, result.1)
+        }
+    }
+    
+    class func patch (forURL url : String, withData data : [String : AnyObject], completion:  @escaping (Any?,Error?) -> Void) {
+        
+        var headers = [String: String]()
+        let token = UserDefaults.standard.string(forKey: "x-auth")
+        headers ["x-auth"] = token
+        
+        Alamofire.request(url, method: .patch, parameters: data, encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
             let result  = handleResponse (response: response)
             completion (result.0, result.1)
         }

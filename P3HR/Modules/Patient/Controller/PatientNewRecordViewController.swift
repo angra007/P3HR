@@ -262,10 +262,29 @@ extension PatientNewRecordViewController : PatientPresentorDelegate {
 extension PatientNewRecordViewController : UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        picker .dismiss(animated: true, completion: nil)
-        if let image = info[UIImagePickerControllerReferenceURL] as? NSURL {
-            self.attachmentURL = image as URL!
+       
+        let imageURL = info[UIImagePickerControllerReferenceURL] as! NSURL
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+
+        let fileURL = documentsDirectory.appendingPathComponent(imageURL.lastPathComponent!)
+        // get your UIImage jpeg data representation and check if the destination file url already exists
+        if let data = UIImageJPEGRepresentation(image, 1.0) {
+            if FileManager.default.fileExists(atPath: fileURL.path) == false {
+                do {
+                    // writes the image data to disk
+                    try data.write(to: fileURL)
+                    self.attachmentURL = fileURL
+                    print("file saved")
+                } catch {
+                    print("error saving file:", error)
+                }
+            }
+            else {
+                self.attachmentURL = fileURL
+            }
         }
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

@@ -66,7 +66,7 @@ class AuthPresentor {
         }
     }
     
-    func register (withEmail email : String, password : String,type : String , firstName : String, secondName : String, completion : @escaping (AuthModel?, Error?) -> ()) {
+    func register (withEmail email : String, password : String,type : String , firstName : String, secondName : String, imagePath : String ,completion : @escaping (AuthModel?, Error?) -> ()) {
         delegate.showActivityIndicator()
         var dict = [String : String] ()
         dict ["email"] = email
@@ -74,10 +74,18 @@ class AuthPresentor {
         dict ["type"] = type
         dict ["firstName"] = firstName
         dict ["lastName"] = secondName
+        dict ["imagePath"] = imagePath
         
         NetworkManager <AuthModel>.postWithoutToken(forRequest: .registeration, withData: dict as [String : AnyObject]) { (response, error) in
             self.delegate.hideActivityIndicator()
             self.handleAuth(response: response, error: error, completion: completion)
+        }
+    }
+    
+    func uploadProfileImage (withURL url : URL, completion : @escaping (Attachment?, Error?) -> ()) {
+        delegate.showActivityIndicator()
+        NetworkManager<Attachment>.upload(forRequest: .profileImage, withURL: url) { (response, errror) in
+            completion (response, errror)
         }
     }
 }

@@ -19,5 +19,4 @@ class ActivityIndicatorManager {
         SVProgressHUD.dismiss ()
     }
     
-    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PatientEditProfileViewController: ParentViewController {
+class PatientEditProfileViewController: ParentViewController, PatientPresentorDelegate {
 
     private let FIRST_NAME_TAG = 10001
     private let LAST_NAME_TAG = 10002
@@ -17,6 +17,7 @@ class PatientEditProfileViewController: ParentViewController {
     private let CITY_TAG = 10005
     private let PROVIENCE_TAG = 10006
     
+    let patientPresentor = PatientPresentor()
     var patientProfile : PatientProfile!
     
     @IBOutlet weak var firstNameTextfield: P3HRTextField! {
@@ -72,15 +73,12 @@ class PatientEditProfileViewController: ParentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        patientPresentor.delegate = self
         if #available(iOS 11.0, *) {
             navigationItem.largeTitleDisplayMode = .never
         } else {
             // Fallback on earlier versions
         }
-        
-        
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -100,6 +98,24 @@ class PatientEditProfileViewController: ParentViewController {
     
     @objc func didTapDoneButton () {
         
+        let profileID = UserDefaults.standard.string(forKey: "profileID")!
+        var dict = [String : String] ()
+        dict ["profileID"] = profileID
+        dict ["firstName"] = firstNameTextfield.text
+        dict ["lastName"] = lastNameTextfield.text
+        dict ["email"] = emailTextfield.text
+        dict ["phoneNumber"] = phoneNumberTextField.text
+        dict ["city"] = cityTextField.text
+        dict ["provience"] = provienceTextField.text
+        
+        patientPresentor.updateProfile(withDict: dict) { [unowned self] (_, error) in
+            if let error = error {
+                AlertManager.showAlert(inViewController: self, withTitle: "", message: error.localizedDescription)
+            }
+            else {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 
 }

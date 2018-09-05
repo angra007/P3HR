@@ -280,6 +280,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeL-U1-o4E" customClass="P3HRButton" customModule="P3HR" customModuleProvider="target">
+                                <rect key="frame" x="137" y="206" width="100" height="100"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERY-Ax-yXK">
                                 <rect key="frame" x="164" y="314" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -429,12 +432,16 @@
                             <constraint firstItem="3dY-uJ-2ex" firstAttribute="leading" secondItem="aeR-OJ-5YJ" secondAttribute="leading" id="6cn-KZ-anX"/>
                             <constraint firstItem="ERY-Ax-yXK" firstAttribute="centerX" secondItem="Oe7-Hk-tfg" secondAttribute="centerX" id="DVs-Fe-hmW"/>
                             <constraint firstItem="9JU-Vp-MTw" firstAttribute="leading" secondItem="bUu-7K-szM" secondAttribute="leading" id="H06-tP-TXQ"/>
+                            <constraint firstItem="SeL-U1-o4E" firstAttribute="bottom" secondItem="C8c-Ow-YtH" secondAttribute="bottom" id="Oml-a9-uTN"/>
                             <constraint firstItem="9JU-Vp-MTw" firstAttribute="trailing" secondItem="bUu-7K-szM" secondAttribute="trailing" id="QhL-s4-a4W"/>
                             <constraint firstItem="9JU-Vp-MTw" firstAttribute="top" secondItem="bUu-7K-szM" secondAttribute="bottom" constant="8" id="Ux6-ue-lbm"/>
+                            <constraint firstItem="SeL-U1-o4E" firstAttribute="top" secondItem="C8c-Ow-YtH" secondAttribute="top" id="Xos-Ta-Etv"/>
                             <constraint firstItem="aeR-OJ-5YJ" firstAttribute="trailing" secondItem="3dY-uJ-2ex" secondAttribute="trailing" id="YK8-SK-0Me"/>
                             <constraint firstItem="ERY-Ax-yXK" firstAttribute="top" secondItem="C8c-Ow-YtH" secondAttribute="bottom" constant="8" id="a5I-kS-suY"/>
                             <constraint firstItem="C8c-Ow-YtH" firstAttribute="bottom" secondItem="3dY-uJ-2ex" secondAttribute="bottom" constant="40" id="eCa-Sb-e9Y"/>
                             <constraint firstItem="bUu-7K-szM" firstAttribute="leading" secondItem="aeR-OJ-5YJ" secondAttribute="leading" constant="16" id="gWJ-Up-zDr"/>
+                            <constraint firstItem="SeL-U1-o4E" firstAttribute="leading" secondItem="C8c-Ow-YtH" secondAttribute="leading" id="jBz-pY-Fj5"/>
+                            <constraint firstItem="SeL-U1-o4E" firstAttribute="trailing" secondItem="C8c-Ow-YtH" secondAttribute="trailing" id="kZC-CH-pJ8"/>
                             <constraint firstItem="C8c-Ow-YtH" firstAttribute="centerX" secondItem="Oe7-Hk-tfg" secondAttribute="centerX" id="nGW-Pe-FgF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aeR-OJ-5YJ"/>
@@ -461,6 +468,9 @@
                         <outlet property="cityLabel" destination="E3i-z0-1ZI" id="bix-kG-3lh"/>
                         <outlet property="emailLabel" destination="Y5d-X3-NS3" id="bxi-jZ-TbR"/>
                         <outlet property="nameLabel" destination="ERY-Ax-yXK" id="NE7-eH-ZEf"/>
+                        <outlet property="phoneNumberLabel" destination="V2g-WU-1Qv" id="zwL-b1-gze"/>
+                        <outlet property="profileImageButton" destination="SeL-U1-o4E" id="WjB-ei-C1s"/>
+                        <outlet property="profileImageView" destination="C8c-Ow-YtH" id="GUa-dO-gfz"/>
                         <outlet property="provienceLabel" destination="Xqg-Sd-C3k" id="reM-PY-9yF"/>
                     </connections>
                 </viewController>

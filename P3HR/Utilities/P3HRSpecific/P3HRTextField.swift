@@ -33,14 +33,14 @@ class P3HRTextField: JVFloatLabeledTextField {
 //        self.layer.addSublayer(border)
 //        self.layer.masksToBounds = true
         
-        self.borderStyle = .none
-        //self.layer.backgroundColor = UIColor.white.cgColor
-        
-        self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.gray.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 0.5)
-        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 0.0
+        self.borderStyle = UITextBorderStyle.none;
+        let border = CALayer()
+        let width = CGFloat(1.0)
+        border.borderColor = UIColor.lightGray.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width,   width:  self.frame.size.width, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
         
         let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 10, height: self.frame.height))
         view.backgroundColor = UIColor.clear
@@ -49,6 +49,8 @@ class P3HRTextField: JVFloatLabeledTextField {
         
         self.floatingLabelTextColor = Styles.color(forKey: .formFieldPlaceholderActiveColor)
         self.floatingLabelActiveTextColor = Styles.color(forKey: .formFieldPlaceholderActiveColor)
+        
+        
     }
 
 }

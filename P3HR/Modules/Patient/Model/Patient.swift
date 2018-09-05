@@ -19,4 +19,6 @@ class PatientProfile : BaseModel {
     var firstName : String?
     var lastName : String?
     var email : String?
+    var imagePath : String?
+    var phoneNumber : Int = 0
 }

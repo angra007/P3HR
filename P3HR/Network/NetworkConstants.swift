@@ -15,6 +15,7 @@ enum RequestType {
     case registeration
     case defaults
     case profile
+    case profileImage
     case record
     case recordAttachment
     case verifyCode
@@ -38,6 +39,8 @@ enum RequestType {
             return BASE_URL + "auth/verifyOtp"
         case .resendCode:
             return BASE_URL + "auth/resendOtp"
+        case .profileImage:
+            return BASE_URL + "profileImage"
         }
     }
 }
