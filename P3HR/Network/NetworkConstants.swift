@@ -20,6 +20,7 @@ enum RequestType {
     case recordAttachment
     case verifyCode
     case resendCode
+    case search
 
     var url : String {
         switch self {
@@ -41,6 +42,8 @@ enum RequestType {
             return BASE_URL + "auth/resendOtp"
         case .profileImage:
             return BASE_URL + "profileImage"
+        case .search :
+            return BASE_URL + "search"
         }
     }
 }

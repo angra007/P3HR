@@ -22,3 +22,8 @@ class PatientProfile : BaseModel {
     var imagePath : String?
     var phoneNumber : Int = 0
 }
+
+
+class HealthProfessionalSearchResult : BaseModel {
+    var users : [HealthProfessional] = [HealthProfessional] ()
+}

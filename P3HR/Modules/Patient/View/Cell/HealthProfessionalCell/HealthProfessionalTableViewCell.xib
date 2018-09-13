@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthProfessionalTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="HealthProfessionalTableViewCell" customModule="P3HR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wln-2w-n7w" customClass="CellView" customModule="P3HR" customModuleProvider="target">
+                        <rect key="frame" x="8" y="0.0" width="304" height="79.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fvz-95-pgE">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9ZL-hj-cOW"/>
+                                    <constraint firstAttribute="width" constant="40" id="Vih-qf-dzQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm5-Mb-CkL" customClass="P3HRLabel" customModule="P3HR" customModuleProvider="target">
+                                <rect key="frame" x="56" y="8" width="240" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbG-Em-faq" customClass="P3HRLabel" customModule="P3HR" customModuleProvider="target">
+                                <rect key="frame" x="56" y="27" width="240" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Professional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N30-pf-Utl">
+                                <rect key="frame" x="56" y="43.5" width="240" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc8-vl-g1b">
+                                <rect key="frame" x="56" y="60" width="48.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QbG-Em-faq" firstAttribute="leading" secondItem="sm5-Mb-CkL" secondAttribute="leading" id="0Fl-Mg-ODD"/>
+                            <constraint firstItem="kc8-vl-g1b" firstAttribute="leading" secondItem="N30-pf-Utl" secondAttribute="leading" id="3zh-yJ-8Kc"/>
+                            <constraint firstItem="Fvz-95-pgE" firstAttribute="top" secondItem="Wln-2w-n7w" secondAttribute="top" constant="8" id="CE4-27-7GR"/>
+                            <constraint firstAttribute="trailing" secondItem="sm5-Mb-CkL" secondAttribute="trailing" constant="8" id="IgR-qz-kJ4"/>
+                            <constraint firstItem="sm5-Mb-CkL" firstAttribute="top" secondItem="Fvz-95-pgE" secondAttribute="top" id="Imx-sW-dnH"/>
+                            <constraint firstAttribute="bottom" secondItem="kc8-vl-g1b" secondAttribute="bottom" constant="5" id="KlX-da-Nzu"/>
+                            <constraint firstItem="N30-pf-Utl" firstAttribute="top" secondItem="QbG-Em-faq" secondAttribute="bottom" constant="2" id="MtB-jB-t02"/>
+                            <constraint firstItem="Fvz-95-pgE" firstAttribute="leading" secondItem="Wln-2w-n7w" secondAttribute="leading" constant="8" id="QCx-dJ-P2A"/>
+                            <constraint firstItem="kc8-vl-g1b" firstAttribute="top" secondItem="N30-pf-Utl" secondAttribute="bottom" constant="2" id="SsD-aq-ru0"/>
+                            <constraint firstAttribute="height" constant="79.5" id="TBc-nw-Y6S"/>
+                            <constraint firstItem="QbG-Em-faq" firstAttribute="top" secondItem="sm5-Mb-CkL" secondAttribute="bottom" constant="2" id="Tnu-AZ-o3n"/>
+                            <constraint firstItem="N30-pf-Utl" firstAttribute="leading" secondItem="QbG-Em-faq" secondAttribute="leading" id="WdB-ve-11W"/>
+                            <constraint firstAttribute="trailing" secondItem="QbG-Em-faq" secondAttribute="trailing" constant="8" id="X9l-vy-ssD"/>
+                            <constraint firstAttribute="trailing" secondItem="N30-pf-Utl" secondAttribute="trailing" constant="8" id="mf2-k6-6eq"/>
+                            <constraint firstItem="sm5-Mb-CkL" firstAttribute="leading" secondItem="Fvz-95-pgE" secondAttribute="trailing" constant="8" id="yr9-Lj-9Gn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Wln-2w-n7w" secondAttribute="bottom" id="NDZ-lc-Vl2"/>
+                    <constraint firstAttribute="trailing" secondItem="Wln-2w-n7w" secondAttribute="trailing" constant="8" id="Ng3-52-z3Y"/>
+                    <constraint firstItem="Wln-2w-n7w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bBL-6U-mDl"/>
+                    <constraint firstItem="Wln-2w-n7w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fPP-fB-V2U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="QbG-Em-faq" id="Ipk-om-Paq"/>
+                <outlet property="healthProfessionalLabel" destination="N30-pf-Utl" id="fg3-Ts-WR5"/>
+                <outlet property="locationLabel" destination="kc8-vl-g1b" id="eEz-Ty-Yrx"/>
+                <outlet property="nameLabel" destination="sm5-Mb-CkL" id="C1J-6V-u29"/>
+                <outlet property="profileImageView" destination="Fvz-95-pgE" id="XRN-hb-ZeI"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>
